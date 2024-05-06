@@ -1,0 +1,130 @@
+.fale-conosco {
+    margin-top: 10vh;
+    margin-bottom: 15vh;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2vh;
+}
+
+.campoFale {
+    display: flex;
+    justify-content: right; 
+    margin-top: 2vh;
+    padding-right: 2.5vw ;
+}
+
+.campoDuvida {
+    align-items: flex-start;
+    display: flex;
+    justify-content: flex-end; 
+    margin-top: 2vh;
+    padding-right: 2.5vw ;
+}
+
+.campoFaleInput {
+    display: flex;
+    margin-top: 2vh;
+    padding-left: 2.5vw ;
+}
+
+.campoDuvidaInput {
+    display: flex;
+    margin-top: 2vh;
+    padding-left: 2.5vw ;
+}
+
+label {
+    margin-bottom: 0;
+    color: #fff;
+    font-size: 2.5vh;
+}
+
+.input-wrapper {
+    background-color: #333;
+    border-radius: 2vh;
+    padding: 0.5vh;
+}
+
+
+.input-wrapper input[type="email"] {
+    width: 16vw;
+    padding: 0.8vh;
+    font-size: 1.6vh;
+    background: none;
+    color: #fff;
+    border: none;
+    border-radius: 1vh;
+    resize: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.input-wrapper textarea {
+    width: 16vw;
+    height: 15vh; 
+    padding: 0.8vh;
+    font-size: 1.6vh;
+    background: none;
+    color: #fff;
+    border: none;
+    border-radius: 1vh;
+    resize: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.enviar-btn {
+    background-color: #555;
+    border: none;
+    border-radius: 1vh;
+    color: #fff;
+    padding: 1vh 2vw; 
+    font-size: 1.6vh;
+    cursor: pointer;
+    margin: 2vh auto; 
+    display: block; 
+}
+
+.mensagem-enviada {
+    text-align: center;
+    margin-top: 2vh;
+    color: #fff; 
+}
+
+@media (max-width: 768px) {
+    .fale-conosco {
+        margin-top: 10vh; 
+        margin-bottom: 15vh;
+    }
+
+    .input-wrapper input[type="email"] {
+        width: 70vw;
+        padding: 0.8vh;
+        font-size: 1.6vh;
+        background: none;
+        color: #fff;
+        border: none;
+        border-radius: 1vh;
+        resize: none;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .input-wrapper textarea {
+        width: 70vw;
+        height: 15vh; 
+        padding: 0.8vh;
+        font-size: 1.6vh;
+        background: none;
+        color: #fff;
+        border: none;
+        border-radius: 1vh;
+        resize: none;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .enviar-btn {
+        width: 30%; 
+        max-width: 100%;
+    }
+}

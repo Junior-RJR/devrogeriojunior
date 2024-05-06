@@ -1,0 +1,79 @@
+.projetos {
+  text-align: center;
+}
+
+.textProjetos {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  padding-top: 120px;
+  font-size: 60px;
+}
+
+.descricao {
+  font-size: 25px;
+  margin-bottom: 25px;
+}
+
+.carrossel {
+  position: relative;
+  display: inline-block;
+}
+
+.imagem-carrossel {
+  width: 50vw;
+  height: auto;
+  border-radius: 5px;
+}
+
+.controles {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.controles button {
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  font-size: 24px;
+  padding: 10px 5px;
+  cursor: pointer;
+}
+
+.controles button:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.pontos-navegacao {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.pontos-navegacao button {
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.pontos-navegacao button.ativo {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+@media (max-width: 768px) {
+  .carrossel {
+    width: 85%; 
+    margin: 0 auto;
+  }
+
+  .imagem-carrossel {
+    width: 100%; 
+    height: auto; 
+  }
+}
