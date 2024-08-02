@@ -1,0 +1,132 @@
+.meus-projetos {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+    padding: 2vh 10vw;
+    background-color: #f0f0f0;
+}
+
+.text-projetos {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    padding-top: 5vh;
+    font-size: 2.5vh;
+    color: #333;
+    width: 100%;
+    margin-bottom: 2vh;
+}
+
+.projeto {
+    width: 48%;
+    margin-bottom: 4vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #61dafb;
+    border-radius: 8px;
+    padding: 1vh;
+    background-color: white;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: translateX(10vw);
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+.projeto.aparecer {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.projeto.direita .imagem-projeto {
+    order: 2;
+}
+
+.projeto.esquerda .imagem-projeto {
+    order: 1;
+}
+
+.texto-projeto {
+    flex: 1;
+    padding: 1vw;
+    color: black;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+.projeto.aparecer .texto-projeto {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.texto-projeto h3 {
+    font-size: 2.5vh;
+    margin-bottom: 0.5vh;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.texto-projeto p {
+    font-size: 1.8vh;
+    margin: 0;
+    color: black;
+}
+
+.imagem-projeto {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imageSite {
+    max-width: 80%;
+    border-radius: 8px;
+    box-shadow: 1vh 1vh 1.5vh rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.imageSite:hover {
+    transform: scale(1.05);
+}
+
+.botao-projeto {
+    display: inline-block;
+    margin-left: 1vh;
+    padding: 0.5vh 1vh;
+    border-radius: 5px;
+    font-size: 1.5vh;
+    cursor: pointer;
+}
+
+.botao-prod {
+    background-color: #4CAF50; 
+    color: white;
+}
+
+.botao-local {
+    background-color: #333;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .meus-projetos {
+        padding: 2vh 5vw;
+    }
+
+    .projeto {
+        width: 100%; 
+        max-width: none; 
+        flex-direction: column;
+    }
+
+    .imagem-projeto {
+        margin-bottom: 2vh;
+    }
+
+    .imageSite {
+        max-width: 90%;
+    }
+}

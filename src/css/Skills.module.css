@@ -1,0 +1,112 @@
+.skillsSection {
+    text-align: center;
+    padding: 2rem;
+    background-color: #f5f5f5;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+  }
+  
+  .phoneContainer {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 4rem; 
+  }
+  
+  .phoneImage {
+    max-width: 50rem; 
+    height: auto;
+    border-radius: 15px; 
+    position: relative;
+    z-index: 1;
+  }
+  
+  .skillsContainer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    pointer-events: none; 
+  }
+  
+  .skill {
+    position: absolute;
+    opacity: 0;
+    transform: translateY(100px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    pointer-events: auto;
+    z-index: 2;
+  }
+  
+  .skill.inView {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .skillIcon {
+    width: 4rem; 
+    height: 4rem;
+    margin-right: 0.5rem;
+  }
+  
+  .skillName {
+    font-size: 1rem; 
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+  }
+  
+  
+  .skill:nth-of-type(1) {
+    left: calc(50% - 14rem); 
+    top: calc(50% - 14rem); 
+  }
+  
+  .skill:nth-of-type(2) {
+    left: calc(50% + 10rem); 
+    top: calc(50% - 14rem); 
+  }
+  
+  .skill:nth-of-type(3) {
+    left: calc(50% - 14rem); 
+    top: calc(50% - 6rem); 
+  }
+  
+  .skill:nth-of-type(4) {
+    left: calc(50% + 10rem); 
+    top: calc(50% - 6rem); 
+  }
+  
+  .skill:nth-of-type(5) {
+    left: calc(50% - 14rem); 
+    bottom: calc(50% - 14rem); 
+  }
+  
+  .skill:nth-of-type(6) {
+    left: calc(50% + 10rem); 
+    bottom: calc(50% - 14rem); 
+  }
+  
+  .skill:nth-of-type(7) {
+    left: calc(50% - 14rem); 
+    bottom: calc(50% - 6rem); 
+  }
+  
+  .skill:nth-of-type(8) {
+    left: calc(50% + 10rem); 
+    bottom: calc(50% - 6rem); 
+  }
+  
+  .skill:nth-of-type(9) {
+    left: calc(50% - 14rem); 
+    bottom: calc(50% - 10rem); 
+  }
+  

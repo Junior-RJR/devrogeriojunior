@@ -1,5 +1,4 @@
-/* @media only screen and (max-width: 601px) { */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
         header {
             padding-bottom: 10vh; 
         }
@@ -44,7 +43,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-color: black;
+    background-color: #f5f5f5;
     color: white;
     max-width: 1800px;
     margin: 0 auto;
@@ -174,4 +173,4 @@ footer {
         width: 7vw;
         height: auto;
     }
-  }
+  } */

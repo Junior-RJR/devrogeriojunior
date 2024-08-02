@@ -5,7 +5,7 @@ import FaleConosco from './FaleConosco';
 import Servicos from './Servicos';
 import Projetos from './Projetos';
 
-const KJRDev = () => {
+const RJR = () => {
     // const homeRef = useRef(null);
     const servicosRef = useRef(null);
     const projetosRef = useRef(null);
@@ -96,4 +96,4 @@ const KJRDev = () => {
     );
 }
 
-export default KJRDev;
+export default RJR;

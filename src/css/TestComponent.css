@@ -1,0 +1,75 @@
+/* /////// TEST1 //////////////// */
+.test1-container {
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+  }
+  
+  .test1-container h2 {
+    margin-top: 0;
+    text-align: left;
+  }
+  
+  .contacts {
+    font-size: 36px;
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: left; 
+    color: rgb(95, 93, 93);
+  }
+  
+  .difference {
+    font-size: 16px;
+    color: white; 
+    text-align: left; 
+  }
+  
+  .positive {
+    color: green;
+  }
+  
+  .negative {
+    color: red;
+  }
+  
+  /* /////// TEST1 //////////////// */
+
+  /* /////// TEST2 //////////////// */
+.test2-container {
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+  }
+  
+  .test2-container h2 {
+    margin-top: 0;
+    text-align: left; 
+  }
+/* /////// TEST2 //////////////// */
+
+  /* /////// TEST3 //////////////// */
+  .test3-container {
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+  }
+  
+  .test3-container h2 {
+    margin-top: 0;
+    text-align: left;
+  }
+/* /////// TEST3 //////////////// */
+
+
+  /* /////// TEST4  //////////////// */
+  .test4-container {
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+  }
+  
+  .test4-container h2 {
+    margin-top: 0;
+    text-align: left; 
+  }
+/* /////// TEST4  //////////////// */

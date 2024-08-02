@@ -6,15 +6,15 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer-content">
         <div className="footer-section">
-          <a href="https://www.linkedin.com/company/kjr-desenvolvimento" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.linkedin.com/in/rogério-junior/" target="_blank" rel="noopener noreferrer">
             <img src="/images/linkedin.svg" alt="Logo linkedin" className='linkedin' />
           </a>
         </div>
         <div className="footer-section logo">
-          <img src="/images/logo.svg" alt="Logo" className="logo" />
+          <img src="/images/RJR-Branco.svg" alt="Logo" className="logo" />
         </div>
         <div className="footer-section about-me">
-          <a href="mailto:kjrdesenvolvimento@gmail.com">
+          <a href="mailto:devrogeriojunior@gmail.com">
             <img src="/images/email.svg" alt="Logo Email" className="email" />
           </a>
         </div>

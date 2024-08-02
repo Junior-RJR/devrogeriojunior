@@ -1,0 +1,62 @@
+.dashboardDash-header {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    flex-direction: column;
+
+}
+
+.logoDash-container {
+    display: flex;
+    align-items: center;
+}
+
+.logoDash {
+    width: 4vh;
+}
+
+.homeDash-icon {
+    width: 5vh; 
+    margin-right: 0.5rem; 
+}
+
+.dividerDash {
+    height: 5vh; 
+    width: 0.1vh; 
+    background-color: white;
+    margin: 0 0.5rem; 
+}
+
+.dividerDashOther {
+    height: 5vh; 
+    width: 0.1vh; 
+    background-color: white;
+    margin: 0 0.5rem; 
+}
+
+.backDash-to-site {
+    display: flex;
+    align-items: center;
+}
+
+.siteDash-link {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin-left: 0.5rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.siteDash-link:hover {
+    text-decoration: underline;
+}
+
+.horizontalDash-line {
+    width: 1000000000vh;
+    height: 0.1vh; 
+    background-color: rgb(95, 93, 93); 
+    margin-top: 1rem;
+    margin-bottom: 1rem; 
+}
