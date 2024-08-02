@@ -1,6 +1,6 @@
 import React from 'react';
-import styles from '../css/SiteConstrucao.module.css'; // Certifique-se de que o caminho esteja correto
-import logo from '../assets/RJR-Branco.svg'; // Atualizado com o novo caminho
+import styles from '../css/SiteConstrucao.module.css'; 
+import logo from '../assets/RJR-Branco.svg';
 
 const SiteConstrucao = () => {
   return (
