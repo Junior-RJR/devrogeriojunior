@@ -12,11 +12,13 @@
     --green-500: #00875f;
 
     --red-500: #f75a68;
+
+    --blue-300: #58CCE9;
 }
 
 :focus {
     outline: transparent;
-    box-shadow: 0 0 0 2px var(--green-500);
+    box-shadow: 0 0 0 2px var(--blue-300);
 }
 
 * {

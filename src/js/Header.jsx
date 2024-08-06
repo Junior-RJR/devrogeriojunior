@@ -1,8 +1,15 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState } from 'react';
+import { Link } from 'react-scroll';
 import styles from '../css/Header.module.css';
+import { FaBars, FaTimes } from 'react-icons/fa';
 
 const Header = () => {
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+    const toggleMenu = () => {
+        setIsMenuOpen(!isMenuOpen);
+    };
+
     return (
         <header className={styles.header}>
             <div className={styles.logoContainer}>
@@ -12,18 +19,22 @@ const Header = () => {
                     className={styles.logo}
                 />
             </div>
-            <nav className={styles.nav}>
+            <div className={styles.menuIcon} onClick={toggleMenu}>
+                {isMenuOpen ? <FaTimes /> : <FaBars />}
+            </div>
+            <div className={`${styles.mobileMenu} ${isMenuOpen ? styles.open : ''}`}>
                 <ul className={styles.navList}>
-                    <li className={styles.navItem}><Link to="#sobreMim" className={styles.navLink}>Sobre Mim</Link></li>
-                    <li className={styles.navItem}><Link to="#experiencias" className={styles.navLink}>Experiências</Link></li>
-                    <li className={styles.navItem}><Link to="#cursosCertificados" className={styles.navLink}>Cursos e Certificados</Link></li>
-                    <li className={styles.navItem}><Link to="#projetos" className={styles.navLink}>Projetos</Link></li>
-                    <li className={styles.navItem}><Link to="/dashboard" className={styles.navLink}>Dashboard</Link></li>
-                    <li className={styles.navItem}><Link to="#contatos" className={styles.navLink}>Contatos</Link></li>
+                    <li className={styles.navItem}><Link to="homeId" className={styles.mobileNavLink} smooth={true} duration={500} onClick={toggleMenu}>Sobre Mim</Link></li>
+                    <li className={styles.navItem}><Link to="skillsId" className={styles.mobileNavLink} smooth={true} duration={500} onClick={toggleMenu}>Skills</Link></li>
+                    <li className={styles.navItem}><Link to="experienciasId" className={styles.mobileNavLink} smooth={true} duration={500} onClick={toggleMenu}>Experiências</Link></li>
+                    <li className={styles.navItem}><Link to="cursosId" className={styles.mobileNavLink} smooth={true} duration={500} onClick={toggleMenu}>Cursos</Link></li>
+                    <li className={styles.navItem}><Link to="meusProjetosId" className={styles.mobileNavLink} smooth={true} duration={500} onClick={toggleMenu}>Projetos</Link></li>
+                    {/* <li className={styles.navItem}><Link to="/dashboard" className={styles.navLink}>Dashboard</Link></li> */}
+                    <li className={styles.navItem}><Link to="footerId" className={styles.mobileNavLink} smooth={true} duration={500} onClick={toggleMenu}>Contatos</Link></li>
                 </ul>
-            </nav>
+            </div>
         </header>
     );
 };
 
-export default Header;
+export default Header;             

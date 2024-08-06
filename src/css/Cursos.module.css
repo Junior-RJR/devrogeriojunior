@@ -1,0 +1,153 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  background-color: black;
+  min-height: 100vh;
+  margin-top: 5rem;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  color: #58CCE9;
+  text-align: center;
+}
+
+.diplomas {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 2rem; 
+  justify-content: center;
+  width: 100%;
+  max-width: 1200px; 
+}
+
+.diplomaCard {
+  background-color: transparent;
+  border: 2px solid #61dafb;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.diplomaCard:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.diplomaImageThumbnail {
+  width: 100%;
+  height: 200px; 
+  object-fit: cover; 
+  border-bottom: 2px solid #61dafb;
+}
+
+.diplomaText {
+  font-size: 1.2rem;
+  color: #58CCE9;
+  padding: 1rem;
+  background-color: transparent;
+}
+
+.modal {
+  position: fixed; 
+  top: 50%;
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  padding: 0;
+  border: none;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; 
+}
+
+.modalImage {
+  max-width: 50vw; 
+  max-height: 50vh; 
+  width: auto; 
+  height: auto; 
+  object-fit: contain; 
+}
+
+.overlay {
+  position: fixed; 
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 999; 
+}
+
+.modalCloseButton {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: #000000;
+  color: #58CCE9;
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
+  border-radius: 50%;
+  font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+    margin-top: 2rem;
+  }
+
+  .title {
+    font-size: 2rem; 
+    margin-bottom: 1.5rem;
+  }
+
+  .diplomas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 1rem; 
+  }
+
+  .diplomaCard {
+    max-width: 100%; 
+    margin: 0 auto; 
+  }
+
+  .diplomaImageThumbnail {
+    height: 150px; 
+  }
+
+  .diplomaText {
+    font-size: 1rem; 
+    padding: 0.5rem;
+  }
+
+  .modal {
+    width: 90vw; 
+    height: 50vh;
+    padding: 0; 
+  }
+
+  .modalImage {
+    max-width: 90vw; 
+    max-height: 80vh; 
+    width: auto; 
+    height: auto; 
+    object-fit: contain; 
+  }
+
+  .modalCloseButton {
+    font-size: 1.25rem;
+    padding: 0.3rem;
+  }
+}

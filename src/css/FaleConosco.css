@@ -1,39 +1,50 @@
-.fale-conosco {
+.fale-conosco-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
     margin-top: 10vh;
     margin-bottom: 15vh;
+}
+
+.fale-conosco-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
 }
 
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2vh;
+    width: 100%; 
 }
 
-.campoFale {
+.campoFale, .campoDuvida {
     display: flex;
-    justify-content: right; 
+    flex-direction: column;
+    align-items: center; 
     margin-top: 2vh;
-    padding-right: 2.5vw ;
+    margin-left: 10rem;
 }
 
-.campoDuvida {
-    align-items: flex-start;
+.campoFaleInput, .campoDuvidaInput {
     display: flex;
-    justify-content: flex-end; 
+    justify-content: center; 
     margin-top: 2vh;
-    padding-right: 2.5vw ;
+    align-items: center;
 }
 
 .campoFaleInput {
     display: flex;
     margin-top: 2vh;
-    padding-left: 2.5vw ;
+    padding-left: 2.5vw;
 }
 
 .campoDuvidaInput {
     display: flex;
     margin-top: 2vh;
-    padding-left: 2.5vw ;
+    padding-left: 2.5vw;
 }
 
 label {
@@ -47,7 +58,6 @@ label {
     border-radius: 2vh;
     padding: 0.5vh;
 }
-
 
 .input-wrapper input[type="email"] {
     width: 16vw;
@@ -92,39 +102,45 @@ label {
     color: #fff; 
 }
 
+.download-curriculo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.download-curriculo h2 {
+    margin-bottom: 1rem;
+}
+
+.download-btn {
+    background-color: #61dafb;
+    color: #fff;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.download-btn:hover {
+    background-color: #4a90e2;
+}
+
 @media (max-width: 768px) {
-    .fale-conosco {
-        margin-top: 10vh; 
-        margin-bottom: 15vh;
+    .fale-conosco-container {
+        grid-template-columns: 1fr; 
     }
 
-    .input-wrapper input[type="email"] {
-        width: 70vw;
-        padding: 0.8vh;
-        font-size: 1.6vh;
-        background: none;
-        color: #fff;
-        border: none;
-        border-radius: 1vh;
-        resize: none;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-
+    .input-wrapper input[type="email"], 
     .input-wrapper textarea {
         width: 70vw;
-        height: 15vh; 
-        padding: 0.8vh;
-        font-size: 1.6vh;
-        background: none;
-        color: #fff;
-        border: none;
-        border-radius: 1vh;
-        resize: none;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
 
     .enviar-btn {
-        width: 30%; 
-        max-width: 100%;
+        width: 100%;
     }
 }

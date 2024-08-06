@@ -1,22 +1,30 @@
 import React from 'react';
 import styles from '../css/Home.module.css';
-import fundo4 from '../assets/fundo4.jpg';
-import eu from '../assets/eu.jpeg';
+import fundo from '../assets/fundo5.jpg';
+import eu from '../assets/eu2.png';
 
 const Home = () => {
+  const scrollToFooter = () => {
+    const footerElement = document.getElementById('footerId');
+    if (footerElement) {
+      footerElement.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+
   return (
-    <div className={styles.home} style={{ backgroundImage: `url(${fundo4})` }}>
+    <div id='homeId' className={styles.home} style={{ backgroundImage: `url(${fundo})` }}>
       <div className={styles.overlay}></div>
       <div className={styles.leftSection}>
-        <h1 className={styles.title}>Transforme sua visão em realidade</h1>
-        <h2 className={styles.subtitle}>Nós tornamos seus projetos possíveis</h2>
+        <h1 className={styles.title}>Rogério Junior</h1>
+        <h2 className={styles.subtitle}>Desenvolvedor de Software</h2>
         <ul className={styles.servicesList}>
-          <li>Suporte sem limites durante o projeto</li>
-          <li>Parcelamento</li>
-          <li>Nota fiscal</li>
-          <li>Planos acessíveis</li>
+          <li>Experiência em Desenvolvimento Web e Mobile</li>
+          <li>Habilidades em Front-end e Back-end</li>
+          <li>Especialista em React, Python e outras tecnologias</li>
+          <li>Projetos realizados com sucesso para diversos clientes</li>
         </ul>
-        <button className={styles.requestButton}>Solicitar um orçamento</button>
+         <button className={styles.requestButton} onClick={scrollToFooter}>Entre em contato</button>
       </div>
       <div className={styles.rightSection}>
         <img src={eu} alt="Imagem Lado Direito" className={styles.rightImage} />

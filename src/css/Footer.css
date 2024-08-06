@@ -5,6 +5,7 @@
   text-align: center;
   bottom: 0;
   width: 100%;
+  margin-top: 5rem;
 }
 
 .footer-content {
@@ -36,7 +37,7 @@
 }
 
 @media (max-width: 768px) {
-  .logo {
-    width: 30vw;
+  .email, .linkedin, .logo {
+    width: 12vw; 
   }
 }

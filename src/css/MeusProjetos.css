@@ -3,17 +3,21 @@
     flex-wrap: wrap; 
     justify-content: space-between;
     padding: 2vh 10vw;
-    background-color: #f0f0f0;
+    background-color: black;
+    margin-top: 5rem;
 }
 
 .text-projetos {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
     padding-top: 5vh;
-    font-size: 2.5vh;
-    color: #333;
-    width: 100%;
     margin-bottom: 2vh;
+    width: 100%;
+}
+
+.title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #58CCE9;
 }
 
 .projeto {
@@ -25,7 +29,7 @@
     border: 1px solid #61dafb;
     border-radius: 8px;
     padding: 1vh;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.075);
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
     opacity: 0;
     transform: translateX(10vw);
@@ -60,18 +64,19 @@
 }
 
 .texto-projeto h3 {
-    font-size: 2.5vh;
-    margin-bottom: 0.5vh;
-    color: black;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #61dafb;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    word-break: break-word;
 }
 
 .texto-projeto p {
-    font-size: 1.8vh;
+    font-size: 1.1rem;
     margin: 0;
-    color: black;
+    color: #d0f5ff;
 }
 
 .imagem-projeto {
@@ -82,7 +87,8 @@
 }
 
 .imageSite {
-    max-width: 80%;
+    max-width: 100%;
+    height: auto;
     border-radius: 8px;
     box-shadow: 1vh 1vh 1.5vh rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease-in-out;
@@ -94,39 +100,72 @@
 
 .botao-projeto {
     display: inline-block;
-    margin-left: 1vh;
-    padding: 0.5vh 1vh;
+    margin-left: 1rem;
+    padding: 0.5rem 1rem;
     border-radius: 5px;
-    font-size: 1.5vh;
-    cursor: pointer;
+    font-size: 1.2rem;
+    color: white;
+    text-transform: uppercase;
+    background-color: #61dafb; 
+    max-width: 10rem;
+    margin-bottom: 1rem;
 }
 
-.botao-prod {
+.botao-projeto.prod {
     background-color: #4CAF50; 
-    color: white;
 }
 
-.botao-local {
-    background-color: #333;
-    color: white;
+.botao-projeto.local {
+    background-color: #585757;
 }
 
 @media (max-width: 768px) {
     .meus-projetos {
-        padding: 2vh 5vw;
+      padding: 2rem; 
+      margin-top: 3rem; 
     }
-
+  
+    .text-projetos {
+      padding-top: 2rem; 
+      margin-bottom: 1rem; 
+    }
+  
+    .title {
+      font-size: 2rem; 
+    }
+  
     .projeto {
-        width: 100%; 
-        max-width: none; 
-        flex-direction: column;
+      width: 100%; 
+      margin-bottom: 2rem; 
+      flex-direction: column; 
     }
-
+  
+    .texto-projeto {
+      padding: 1rem;
+    }
+  
+    .texto-projeto h3 {
+      font-size: 1.25rem; 
+    }
+  
+    .texto-projeto p {
+      font-size: 1rem; 
+    }
+  
     .imagem-projeto {
-        margin-bottom: 2vh;
+      width: 100%; 
+      margin-bottom: 1rem; 
     }
-
+  
     .imageSite {
-        max-width: 90%;
+      max-width: 100%; 
+      height: auto; 
     }
-}
+  
+    .botao-projeto {
+      font-size: 1rem; 
+      padding: 0.4rem 0.8rem; 
+      max-width: 100%; 
+      margin-bottom: 0.5rem;
+    }
+  }

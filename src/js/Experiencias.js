@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import '../css/Experiencias.css';
 
 const atribuicoesStefanini = [
+  "Atuação no CensoSP como desenvolvedor Python;",
   "Atuação em projeto de migração de Micro Front End;",
   "Reconstruções de branchs;",
   "Atuação como Desenvolvedor no projeto de migração do Orgão Poupatempo, que faz atendimento em todo o estado de São Paulo;",
@@ -69,90 +70,77 @@ const atribuicoesBelaTintas = [
   "Conhecimentos em ferramentas de modelagem de processos, UML, Visio, PowerPoint e SharePoint."
 ];
 
-const renderList = (atribuicoes) => {
-  return (
-      <ul>
-          {atribuicoes.map((item, index) => (
-              <li key={index}>{item}</li>
-          ))}
-      </ul>
-  );
-};
+const Experiencias = () => {
+  const [modalOpen, setModalOpen] = useState(false);
+  const [empresaSelecionada, setEmpresaSelecionada] = useState({});
+  
+  const handleEmpresaClick = (empresa) => {
+    setEmpresaSelecionada(empresa);
+    setModalOpen(true);
+  };
 
-const Experiencias = ({ history }) => {
-    const [modalOpen, setModalOpen] = useState(false);
-    const [empresaSelecionada, setEmpresaSelecionada] = useState('');
-    const [atribuicoes, setAtribuicoes] = useState([]);
-  
-    const handleEmpresaClick = (empresa, atribuicoes) => {
-      setEmpresaSelecionada(empresa);
-      setAtribuicoes(atribuicoes);
-      setModalOpen(true);
-    };
-  
-    const closeModal = () => {
-      setModalOpen(false);
-    };
-  
-    return (
-      <section id="experiencias" className="experiencias">
-        <div className="container">
-          <h2 className="tituloExp">Experiências</h2>
-          <div className="empresas">
-            {[{
-              nome: 'Stefanini Brasil',
-              cargo: 'Desenvolvedor React',
-              atribuicoes: atribuicoesStefanini
-            }, {
-              nome: 'Certsys Tecnologia da Informação',
-              cargo: 'Desenvolvedor React Jr',
-              atribuicoes: atribuicoesCertsys
-            }, {
-              nome: 'Credits Brasil',
-              cargo: 'Analista de TI Jr',
-              atribuicoes: atribuicoesCredits
-            }, {
-              nome: 'Tecnomafer Telecom',
-              cargo: 'Técnico de TI',
-              atribuicoes: atribuicoesTecnomafer
-            }, {
-              nome: 'Wittel',
-              cargo: 'Trainee',
-              atribuicoes: atribuicoesWittel
-            }, {
-              nome: 'Bela Tintas',
-              cargo: 'Estagiário de TI',
-              atribuicoes: atribuicoesBelaTintas
-            }].map((empresa, index) => (
-              <div 
-                key={index} 
-                className="empresa" 
-                onClick={() => handleEmpresaClick(empresa.nome, empresa.atribuicoes)}
-              >
-                <span className="empresa-cargo">{empresa.cargo}</span>
-                <br />
-                <span className="empresa-nome">{empresa.nome}</span>
-                <br />
-                <span className="clique-aqui">(Clique aqui)</span>
-              </div>
-            ))}
-          </div>
-          {modalOpen && (
-            <div className="modal-overlay" onClick={closeModal}>
-              <div className="modal" onClick={(e) => e.stopPropagation()}>
-                <span className="close-modal" onClick={closeModal}>×</span>
-                <h3>{empresaSelecionada}</h3>
-                <ul>
-                  {atribuicoes.map((item, index) => (
-                    <li key={index}>{item}</li>
-                  ))}
-                </ul>
-              </div>
+  const closeModal = () => {
+    setModalOpen(false);
+  };
+
+  return (
+    <section id="experienciasId" className="experiencias">
+      <div className="container">
+        <h2 className="tituloExp">Experiências</h2>
+        <div className="empresas">
+          {[{
+            nome: 'Stefanini Brasil',
+            cargo: 'Desenvolvedor',
+            atribuicoes: atribuicoesStefanini
+          }, {
+            nome: 'Certsys Tecnologia da Informação',
+            cargo: 'Desenvolvedor React',
+            atribuicoes: atribuicoesCertsys
+          }, {
+            nome: 'Credits Brasil',
+            cargo: 'Analista de TI Jr',
+            atribuicoes: atribuicoesCredits
+          }, {
+            nome: 'Tecnomafer Telecom',
+            cargo: 'Técnico de TI',
+            atribuicoes: atribuicoesTecnomafer
+          }, {
+            nome: 'Wittel',
+            cargo: 'Trainee',
+            atribuicoes: atribuicoesWittel
+          }, {
+            nome: 'Bela Tintas',
+            cargo: 'Estagiário de TI',
+            atribuicoes: atribuicoesBelaTintas
+          }].map((empresa, index) => (
+            <div 
+              key={index} 
+              className="empresa" 
+              style={{ "--delay": index }}
+              onClick={() => handleEmpresaClick(empresa)}
+            >
+              <span className="empresa-cargo">{empresa.cargo}</span>
             </div>
-          )}
+          ))}
         </div>
-      </section>
-    );
-  }
-  
-  export default Experiencias;
+        
+        {modalOpen && (
+          <div className="modal-overlay" onClick={closeModal}>
+            <div className="modal" onClick={(e) => e.stopPropagation()}>
+              <span className="close-modal" onClick={closeModal}>&times;</span>
+              <h3>{empresaSelecionada.cargo}</h3>
+              <div className="nome-empresa">{empresaSelecionada.nome}</div>
+              <ul className="atribuicoes-list">
+                {empresaSelecionada.atribuicoes.map((atribuicao, index) => (
+                  <li key={index} className="atribuicao-item">{atribuicao}</li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        )}
+      </div>
+    </section>
+  );
+}
+
+export default Experiencias;

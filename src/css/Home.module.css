@@ -75,7 +75,7 @@
     position: relative;
     overflow: hidden;
     z-index: 2;
-    width: 50%;
+    width: 40%;
   }
   
   .requestButton::after {
@@ -119,3 +119,39 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   }
   
+  @media (max-width: 768px) {
+    .home {
+        grid-template-columns: 1fr; 
+        height: auto; 
+        padding: 1rem;
+        margin-top: 10rem;
+    }
+
+    .leftSection, .rightSection {
+        margin-top: 2rem; 
+        padding: 1rem; 
+    }
+
+    .title {
+        font-size: 2rem; 
+    }
+
+    .subtitle {
+        font-size: 1.2rem; 
+    }
+
+    .servicesList li {
+        font-size: 1rem; 
+    }
+
+    .requestButton {
+        width: auto; 
+        padding: 0.5rem 1rem; 
+    }
+
+    .rightImage {
+        width: 18rem; 
+        height: 18rem;
+        margin-top: 1rem; 
+    }
+}

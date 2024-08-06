@@ -1,6 +1,6 @@
 .experiencias {
   padding: 5vh 2vw;
-  background-color: #f5f5f5; 
+  background-color: black;
   text-align: center;
 }
 
@@ -15,45 +15,40 @@
   text-align: center;
   padding-top: 10vh;
   font-size: 4rem; 
-  color: #282c34; 
+  color: #58CCE9;
 }
 
 .empresas {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
   gap: 2rem;
   margin-top: 2rem;
+  padding: 0 2rem;
 }
 
 .empresa {
-  background-color: #ffffff;
+  min-width: 200px;
+  max-width: 200px;
+  background-color: #000000;
   padding: 2rem;
-  border-radius: 10px; 
+  border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
   cursor: pointer;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: box-shadow 0.3s ease;
+  scroll-snap-align: start;
+  text-align: left;
 }
 
 .empresa:hover {
-  transform: scale(1.05); 
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
 .empresa-cargo {
+  color: #61dafb;
   font-size: 1.5rem;
   font-weight: 600;
-  color: #282c34;
-}
-
-.empresa-nome {
-  font-size: 1.25rem;
-  color: #61dafb;
-}
-
-.clique-aqui {
-  font-size: 0.875rem;
-  color: #61dafb; 
-  cursor: pointer;
 }
 
 .modal-overlay {
@@ -70,13 +65,17 @@
 }
 
 .modal {
-  background-color: #ffffff;
+  background-color: #000000;
   padding: 2rem;
   border-radius: 10px;
+  border: 2px solid #61dafb; 
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  width: 80%;
-  max-width: 600px;
+  width: 90%; 
+  max-width: 800px; 
+  max-height: 80vh; 
   position: relative;
+  animation: fadeIn 0.3s ease;
+  overflow-y: auto; 
 }
 
 .close-modal {
@@ -85,22 +84,109 @@
   right: 1rem;
   cursor: pointer;
   font-size: 1.5rem;
-  color: #282c34;
+  color: #61dafb;
+}
+
+.modal::-webkit-scrollbar {
+  width: 10px;
+}
+
+.modal::-webkit-scrollbar-track {
+  background: #000; 
+}
+
+.modal::-webkit-scrollbar-thumb {
+  background-color: #61dafb; 
+  border-radius: 10px; 
+  border: 2px solid #000; 
+}
+
+.modal .atribuicoes-list {
+  max-height: calc(80vh - 120px);
+  overflow-y: auto;
 }
 
 .modal h3 {
-  font-size: 1.75rem;
-  margin-bottom: 1rem;
-  color: #282c34;
+  color: #61dafb;
+  margin-bottom: 0.1rem;
+  font-size: 2rem;
 }
 
-.modal ul {
-  list-style: none;
+.modal .nome-empresa {
+  color: #61dafb;
+  font-size: 1.2em; 
+  margin-bottom: 20px; 
+}
+
+.atribuicoes-list {
+  list-style: none; 
   padding: 0;
-  font-size: 1rem;
-  color: #333;
+  font-size: 1.2rem;
 }
 
-.modal li {
-  margin-bottom: 0.5rem;
+.atribuicao-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.atribuicao-item::before {
+  content: '•'; 
+  color: #61dafb; 
+  margin-right: 10px;
+}
+
+
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .tituloExp {
+    font-size: 2.5rem;
+    padding-top: 5vh;
+  }
+
+  .empresas {
+    flex-direction: column;
+    padding: 0;
+    gap: 1rem;
+    overflow-x: hidden; /* Remove rolagem horizontal em telas menores */
+  }
+
+  .empresa {
+    min-width: 100%;
+    max-width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+  }
+
+  .modal {
+    width: 80%; /* Ajusta a largura do modal para 80% da tela */
+    max-width: none; /* Remove o limite máximo de largura */
+    max-height: 80vh; /* Ajusta a altura máxima do modal */
+    padding: 1rem; /* Reduz o padding para se ajustar melhor em dispositivos móveis */
+  }
+
+  .modal h3 {
+    font-size: 1.5rem;
+  }
+
+  .modal .nome-empresa {
+    font-size: 1rem;
+  }
+
+  .atribuicao-item {
+    font-size: 1rem;
+  }
 }

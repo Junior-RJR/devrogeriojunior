@@ -3,7 +3,7 @@ import '../css/Footer.css';
 
 const Footer = () => {
   return (
-    <footer className="footer">
+    <footer id='footerId' className="footer">
       <div className="footer-content">
         <div className="footer-section">
           <a href="https://www.linkedin.com/in/rogério-junior/" target="_blank" rel="noopener noreferrer">
@@ -20,7 +20,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="footer-section copyright">
-        <p>© 2024 KJR Development</p>
+        <p>© 2024 - Todos direitos reservados</p>
       </div>
     </footer>
   );
