@@ -64,7 +64,7 @@ const projetos = [
         descricao: 'Site de Time de Futebol para divulgação e marcação de confrontos.',
         imagem: maracanaFc,
         ordem: 'direita',
-        tipo: 'prod'
+        tipo: 'local'
     }
 ];
 
