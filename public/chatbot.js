@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             input.value = '';
 
-            fetch('http://127.0.0.1:5000/chatbot', {
+            fetch('/api/chatbot', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'

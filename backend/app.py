@@ -10,6 +10,9 @@ def generate_response(message):
     if 'olá' in message or 'oi' in message:
         return 'Olá! Como posso ajudar você hoje?'
     
+    elif 'ola' in message or 'oii' in message:
+        return 'Olá! Como posso ajudar você hoje?'
+    
     elif 'quem é você' in message or 'quem é voce' in message:
         return 'Eu sou um chatbot criado pelo Junior, que posso responder a perguntas sobre o currículo e outras coisas referente a ele =)'
     
