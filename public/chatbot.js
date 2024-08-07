@@ -4,7 +4,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const messagesContainer = document.getElementById('chatbot-messages');
     const chatbotContainer = document.getElementById('chatbot-container');
     const chatbotHeader = document.getElementById('chatbot-header');
-    // const chatbotToggle = document.querySelector('.chatbot-toggle');
 
     function sendMessage() {
         const message = input.value.trim();
@@ -23,17 +22,26 @@ document.addEventListener('DOMContentLoaded', () => {
                 },
                 body: JSON.stringify({ message })
             })
-            .then(response => response.json())
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.json();
+            })
             .then(data => {
                 const botResponse = document.createElement('div');
                 botResponse.className = 'message bot-message';
-                botResponse.innerHTML = `<div class="message-header">RJR-Bot:</div>${data.response}`;
+                botResponse.innerHTML = `<div class="message-header">RJR-Bot:</div>${data.response || 'Erro na resposta do bot'}`;
                 messagesContainer.appendChild(botResponse);
 
                 messagesContainer.scrollTop = messagesContainer.scrollHeight;
             })
             .catch(error => {
                 console.error('Error:', error);
+                const botResponse = document.createElement('div');
+                botResponse.className = 'message bot-message';
+                botResponse.innerHTML = `<div class="message-header">RJR-Bot:</div>Desculpe, ocorreu um erro.`;
+                messagesContainer.appendChild(botResponse);
             });
         }
     }
@@ -50,8 +58,4 @@ document.addEventListener('DOMContentLoaded', () => {
     chatbotHeader.addEventListener('click', () => {
         chatbotContainer.classList.toggle('minimized');
     });
-
-    // chatbotToggle.addEventListener('click', () => {
-    //     chatbotContainer.classList.toggle('minimized');
-    // });
 });
