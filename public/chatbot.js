@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             input.value = '';
 
-            fetch('/api/chatbot', {
+            fetch('https://devrogeriojunior-backend.onrender.com/chatbot', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
