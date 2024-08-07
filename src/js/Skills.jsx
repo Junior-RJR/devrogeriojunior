@@ -54,7 +54,7 @@ const Skills = () => {
 
   return (
     <section id='skillsId' className={styles.skillsSection}>
-      <h1 className={styles.title}>Skills</h1>
+      <h1 className={styles.title}>Habilidades</h1>
       <div className={styles.phoneContainer}>
         <img src={phoneSkills} alt="Phone" className={styles.phoneImage} />
         <div className={styles.skillsContainer}>

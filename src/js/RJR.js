@@ -13,12 +13,12 @@ import Cursos from './Cursos';
 // import SiteConstrucao from './SiteConstrucao';
 
 const RJR = () => {
-    const scrollToTop = () => {
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
-        });
-    };
+    // const scrollToTop = () => {
+    //     window.scrollTo({
+    //         top: 0,
+    //         behavior: 'smooth'
+    //     });
+    // };
 
     return (
         <div>
@@ -61,9 +61,9 @@ const RJR = () => {
                     <img src="/images/whatsVerde.svg" alt="WhatsApp Logo" className="whatsapp-icon" />
                 </a>
             </div>
-            <div id="scrollToTop" className="scroll-to-top" onClick={scrollToTop}>
+            {/* <div id="scrollToTop" className="scroll-to-top" onClick={scrollToTop}>
                 <img src="/images/seta.svg" alt="Seta" className="seta-icon" />
-            </div>
+            </div> */}
         </div>
     );
 }
