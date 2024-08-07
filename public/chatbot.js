@@ -31,6 +31,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 messagesContainer.appendChild(botResponse);
 
                 messagesContainer.scrollTop = messagesContainer.scrollHeight;
+            })
+            .catch(error => {
+                console.error('Error:', error);
             });
         }
     }
