@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import styles from '../css/Skills.module.css';
-import phoneSkills from '../assets/phoneSkills.png';
+import phoneSkills from '../assets/phoneSkills1.png';
 
 import aws from '../assets/skills/aws.svg';
 import css from '../assets/skills/css3.svg';
