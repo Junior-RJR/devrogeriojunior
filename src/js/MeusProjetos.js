@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import '../css/MeusProjetos.css';
 import mimicaImage from '../assets/projects/mimica.png';
 import kjrdev from '../assets/projects/kjrdev.png';
+import edmararagao from '../assets/projects/edmararagao.png';
 import maza from '../assets/projects/maza.png';
 import adsa from '../assets/projects/adsa-maracana.png';
 import cifraDrum from '../assets/projects/cifradrum.png';
@@ -18,6 +19,13 @@ const projetos = [
         tipo: 'prod'
     },
     {
+        titulo: 'Edmar Aragão',
+        descricao: 'Site para apresentação de Pré-candidato a Vereador.',
+        imagem: edmararagao,
+        ordem: 'direita',
+        tipo: 'prod'
+    },
+    {
         titulo: 'I Love Pastel',
         descricao: 'Aplicação web de gerenciamento de comandas e estoque.',
         imagem: maza,
@@ -25,16 +33,16 @@ const projetos = [
         tipo: 'prod'
     },
     {
-        titulo: 'FernandoCar',
-        descricao: 'Sistema de ponto eletronico para funcionários.',
-        imagem: fernandoCar,
+        titulo: 'Site Pessoal',
+        descricao: 'Site de apresentação pessoal.',
+        imagem: devRJR,
         ordem: 'direita',
         tipo: 'prod'
     },
     {
-        titulo: 'Site Pessoal',
-        descricao: 'Site de apresentação pessoal.',
-        imagem: devRJR,
+        titulo: 'FernandoCar',
+        descricao: 'Sistema de ponto eletronico para funcionários.',
+        imagem: fernandoCar,
         ordem: 'direita',
         tipo: 'prod'
     },
