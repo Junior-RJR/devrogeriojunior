@@ -7,6 +7,7 @@ import maza from '../assets/projects/maza.png';
 import adsa from '../assets/projects/adsa-maracana.png';
 import cifraDrum from '../assets/projects/cifradrum.png';
 import devRJR from '../assets/projects/devrjr.png';
+import pvt from '../assets/projects/pvt.png';
 import fernandoCar from '../assets/projects/fernandoCar.png';
 import maracanaFc from '../assets/projects/maracana-fc.png';
 
@@ -20,7 +21,7 @@ const projetos = [
     },
     {
         titulo: 'Edmar Aragão',
-        descricao: 'Site para apresentação de Pré-candidato a Vereador.',
+        descricao: 'Site para apresentação de pré-candidato a Vereador.',
         imagem: edmararagao,
         ordem: 'direita',
         tipo: 'prod'
@@ -36,6 +37,13 @@ const projetos = [
         titulo: 'Site Pessoal',
         descricao: 'Site de apresentação pessoal.',
         imagem: devRJR,
+        ordem: 'direita',
+        tipo: 'prod'
+    },
+    {
+        titulo: 'PVT Consultoria',
+        descricao: 'Site para informação de contato para consultoria',
+        imagem: pvt,
         ordem: 'direita',
         tipo: 'prod'
     },
