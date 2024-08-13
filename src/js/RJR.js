@@ -57,8 +57,8 @@ const RJR = () => {
                <Footer/>
             </footer>
             <div className="whatsapp-logo">
-                <a href="https://api.whatsapp.com/send?phone=11946252220" target="_blank" rel="noopener noreferrer">
-                    <img src="/images/whatsVerde.svg" alt="WhatsApp Logo" className="whatsapp-icon" />
+                <a href="https://api.whatsapp.com/send?phone=5511946252220" target="_blank" rel="noopener noreferrer">
+                    <img src="/images/whatsAzul.svg" alt="WhatsApp Logo" className="whatsapp-icon" />
                 </a>
             </div>
             {/* <div id="scrollToTop" className="scroll-to-top" onClick={scrollToTop}>

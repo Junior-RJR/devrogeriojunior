@@ -19,25 +19,33 @@
   text-align: center;
 }
 
-.email {
+.icon {
+  transition: opacity 0.3s ease;
+}
+
+.email, .linkedin, .logoFooter {
   width: 5vw;
 }
 
-.linkedin {
-  width: 5vw;
+.email:hover {
+  content: url('../assets/emailAzul.svg');
 }
 
-.copyright {
-  flex: 1;
-  text-align: center;
+.linkedin:hover {
+  content: url('../assets/linkedinAzul.svg');
 }
 
-.logo {
-  width: 5vw;
-}
+/* .logoFooter:hover {
+  content: url('../assets/RJR-Azul.svg');
+} */
+
+/* .email:hover,
+.linkedin:hover {
+  transform: scale(1.1); 
+} */
 
 @media (max-width: 768px) {
-  .email, .linkedin, .logo {
+  .email, .linkedin, .logoFooter {
     width: 12vw; 
   }
 }

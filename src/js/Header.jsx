@@ -3,7 +3,7 @@ import { Link } from 'react-scroll';
 import styles from '../css/Header.module.css';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import logoBranco from '../assets/RJR-Branco.svg';
-import logoAzul from '../assets/RJR-Azul.svg';
+import logoAzul from '../assets/RJR-azul.svg';
 
 const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);

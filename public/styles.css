@@ -97,7 +97,7 @@
     padding: 5px;
     border-radius: 5px;
     background-color: #58CCE9; 
-    color: white;
+    color: black;
 }
 
 #chatbot-messages {
@@ -133,7 +133,7 @@
     border: none;
     border-radius: 8px;
     background-color: #58CCE9; 
-    color: white;
+    color: black;
     cursor: pointer;
     font-weight: bold;
 }
