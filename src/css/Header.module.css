@@ -101,7 +101,7 @@
     .menuIcon {
         display: block;
         cursor: pointer;
-        color: white;
+        color: #58cce9;
         font-size: 1.5rem;
         z-index: 1001;
     }
@@ -134,12 +134,12 @@
 
     .mobileNavLink {
         font-size: 1.5rem;
-        color: white;
         text-decoration: none;
         transition: color 0.3s ease;
+        color: #58cce9;
     }
 
     .mobileNavLink:hover {
-        color: #58cce9;
+        color: #106c83;
     }
 }

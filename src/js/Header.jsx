@@ -2,21 +2,34 @@ import React, { useState } from 'react';
 import { Link } from 'react-scroll';
 import styles from '../css/Header.module.css';
 import { FaBars, FaTimes } from 'react-icons/fa';
+import logoBranco from '../assets/RJR-Branco.svg';
+import logoAzul from '../assets/RJR-Azul.svg';
 
 const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const [logo, setLogo] = useState(logoBranco);
 
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
+    };
+
+    const handleMouseEnter = () => {
+        setLogo(logoAzul);
+    };
+
+    const handleMouseLeave = () => {
+        setLogo(logoBranco);
     };
 
     return (
         <header className={styles.header}>
             <div className={styles.logoContainer}>
                 <img 
-                    src="/images/RJR-Branco.svg" 
+                    src={logo} 
                     alt="Logo" 
                     className={styles.logo}
+                    onMouseEnter={handleMouseEnter}
+                    onMouseLeave={handleMouseLeave}
                 />
             </div>
             <div className={styles.menuIcon} onClick={toggleMenu}>
