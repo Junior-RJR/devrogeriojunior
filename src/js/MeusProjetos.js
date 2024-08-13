@@ -22,7 +22,7 @@ const projetos = [
     },
     {
         titulo: 'Edmar Aragão',
-        descricao: 'Site para apresentação de pré-candidato a Vereador',
+        descricao: 'Site para apresentação de candidato a Vereador',
         imagem: edmararagao,
         ordem: 'direita',
         tipo: 'prod'
