@@ -19,6 +19,7 @@
     border-radius: 10px; 
     height: 15vh;
     /* background-color: rgba(255, 255, 255, 0.1); */
+    overflow: hidden; 
   }
   
   .grid-content {
@@ -36,10 +37,13 @@
     border: 1px solid rgb(95, 93, 93);
     border-radius: 10px;
     height: 35vh;
+    height: 95%; 
+    overflow: hidden;
   }
 
   .small-grid-item {
     border: 1px solid rgb(95, 93, 93);
     border-radius: 10px;
-    height: 35vh;
+    height: 75%; 
+    overflow: hidden;
   }

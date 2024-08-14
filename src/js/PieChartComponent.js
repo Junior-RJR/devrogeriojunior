@@ -12,9 +12,9 @@ const PieChartComponent = () => {
         labels: ['Websites', 'Aplicativos', 'Sistemas'],
         datasets: [{
           label: 'Projetos por Tipo',
-          data: [30, 40, 30], 
+          data: [18, 5, 3], 
           backgroundColor: [
-            '#F0D12E',
+            '#dfc750',
             '#C53F3F',
             '#1E56AB'
           ],

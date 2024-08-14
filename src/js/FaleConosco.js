@@ -59,7 +59,7 @@ const FaleConosco = () => {
             </div>
             <div className="download-curriculo">
                 <h2>Download do Currículo</h2>
-                <a href="/path/to/curriculo.pdf" download className="download-btn">Baixar Currículo</a>
+                <a href="/assets/cv/Rogerio Junior.pdf" download className="download-btn">Baixar Currículo</a>
             </div>
         </div>
     );

@@ -54,7 +54,7 @@ label {
 }
 
 .input-wrapper {
-    background-color: #333;
+    background-color: #ffffff13;
     border-radius: 2vh;
     padding: 0.5vh;
 }
@@ -64,7 +64,7 @@ label {
     padding: 0.8vh;
     font-size: 1.6vh;
     background: none;
-    color: #fff;
+    color: #ffffff;
     border: none;
     border-radius: 1vh;
     resize: none;
@@ -77,7 +77,7 @@ label {
     padding: 0.8vh;
     font-size: 1.6vh;
     background: none;
-    color: #fff;
+    color: #ffffff;
     border: none;
     border-radius: 1vh;
     resize: none;
@@ -85,21 +85,28 @@ label {
 }
 
 .enviar-btn {
-    background-color: #555;
+    background-color: #ffffff13;
     border: none;
     border-radius: 1vh;
-    color: #fff;
+    color: #61dafb;
     padding: 1vh 2vw; 
     font-size: 1.6vh;
     cursor: pointer;
     margin: 2vh auto; 
     display: block; 
+    border: 1px solid #61dafb;
+    border-radius: 8px;
+}
+
+.enviar-btn:hover {
+    background-color: #61dafb;
+    color: #fff;
 }
 
 .mensagem-enviada {
     text-align: center;
     margin-top: 2vh;
-    color: #fff; 
+    color: #61dafb; 
 }
 
 .download-curriculo {
@@ -117,17 +124,20 @@ label {
 }
 
 .download-btn {
-    background-color: #61dafb;
-    color: #fff;
+    background-color: #ffffff13;
+    color: #61dafb;
     padding: 1rem 2rem;
     text-decoration: none;
     border-radius: 5px;
     font-size: 1rem;
     transition: background-color 0.3s ease;
+    border: 1px solid #61dafb;
+    border-radius: 8px;
 }
 
 .download-btn:hover {
-    background-color: #4a90e2;
+    background-color: #61dafb;
+    color: #fff;
 }
 
 @media (max-width: 768px) {

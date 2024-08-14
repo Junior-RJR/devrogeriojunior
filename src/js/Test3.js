@@ -10,7 +10,7 @@ const Test3Component = () => {
 
   return (
     <div className="test3-container">
-    <h2>Empresas Grandes</h2>
+    <h2>Empresas Médias</h2>
     <div className="contacts">{contacts}</div>
     <div className="difference">
       <span className={difference >= 0 ? 'positive' : 'negative'}>

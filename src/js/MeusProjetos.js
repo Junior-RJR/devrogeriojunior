@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import '../css/MeusProjetos.css';
-// import mimicaImage from '../assets/projects/mimica.png';
+import mimicaImage from '../assets/projects/mimica.png';
 import kjrdev from '../assets/projects/kjrdev.png';
 import edmararagao from '../assets/projects/edmararagao.png';
 import maza from '../assets/projects/maza.png';
@@ -11,6 +11,7 @@ import pvt from '../assets/projects/pvt.png';
 import fernandoCar from '../assets/projects/fernandoCar.png';
 import maracanaFc from '../assets/projects/maracana-fc.png';
 import informais from '../assets/projects/informais.png';
+import dashboard from '../assets/projects/dashboard.png'
 
 const projetos = [
     {
@@ -56,25 +57,18 @@ const projetos = [
         tipo: 'prod'
     },
     {
+        titulo: 'Dashboard RJR',
+        descricao: 'Dashboard para controle pessoal de trabalhos realizados',
+        imagem: dashboard,
+        ordem: 'direita',
+        tipo: 'prod'
+    },
+    {
         titulo: 'FernandoCar',
         descricao: 'Sistema de ponto eletronico para funcionários',
         imagem: fernandoCar,
         ordem: 'direita',
         tipo: 'prod'
-    },
-    // {
-    //     titulo: 'Jogo de Mímica',
-    //     descricao: 'Jogos para brincar com toda a família em momentos de descontração',
-    //     imagem: mimicaImage,
-    //     ordem: 'esquerda',
-    //     tipo: 'local'
-    // },
-    {
-        titulo: 'CifraDrum',
-        descricao: 'Aplicativo criado para orientar bateristas na hora de tocar',
-        imagem: cifraDrum,
-        ordem: 'direita',
-        tipo: 'local'
     },
     {
         titulo: 'ADSA Cond. Maracanã',
@@ -87,6 +81,20 @@ const projetos = [
         titulo: 'Maracanã FC',
         descricao: 'Site de Time de Futebol para divulgação e marcação de confrontos',
         imagem: maracanaFc,
+        ordem: 'direita',
+        tipo: 'local'
+    },
+    {
+        titulo: 'Jogo de Mímica',
+        descricao: 'Jogos para brincar com toda a família em momentos de descontração',
+        imagem: mimicaImage,
+        ordem: 'esquerda',
+        tipo: 'local'
+    },
+    {
+        titulo: 'CifraDrum',
+        descricao: 'Aplicativo criado para orientar bateristas na hora de tocar',
+        imagem: cifraDrum,
         ordem: 'direita',
         tipo: 'local'
     }
