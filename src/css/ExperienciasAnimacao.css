@@ -1,7 +1,9 @@
 .experiencias {
   padding: 5vh 2vw;
-  background-color: black;
+  background-color: transparent;
   text-align: center;
+  color: #f5f5f5;
+  font-family: 'Roboto', sans-serif;
 }
 
 .container {
@@ -11,7 +13,6 @@
 }
 
 .tituloExp {
-  font-family: 'Poppins', sans-serif;
   text-align: center;
   padding-top: 10vh;
   font-size: 4rem; 
@@ -20,15 +21,13 @@
 
 .empresas {
   display: flex;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  -webkit-overflow-scrolling: touch;
-  gap: 2rem;
+  justify-content: space-between;
+  align-items: flex-end;
   margin-top: 2rem;
-  padding: 0 2rem;
+  padding: 0 1rem;
   opacity: 0;
   transform: translateY(20px);
-  animation: fadeInSequence 1s forwards;
+  animation: fadeInSequence 1s forwards; 
 }
 
 @keyframes fadeInSequence {
@@ -39,23 +38,19 @@
 }
 
 .empresa {
-  min-width: 200px;
-  max-width: 200px;
-  background-color: #000000;
-  padding: 2rem;
+  background-color: #282c34;
+  padding: 1.5rem;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   cursor: pointer;
-  transition: box-shadow 0.3s ease;
-  scroll-snap-align: start;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   text-align: left;
+  flex-grow: 1;
+  margin: 0 0.5rem;
   opacity: 0;
   animation: fadeIn 1s forwards;
 }
 
-.empresa:hover {
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-}
 
 .empresa:nth-child(1) {
   animation-delay: 0.5s;
@@ -88,6 +83,41 @@
   }
 }
 
+.empresa.estagiario {
+  height: 80px;
+  min-width: 150px;
+}
+
+.empresa.trainee {
+  height: 100px;
+  min-width: 150px;
+}
+
+.empresa.tecnico {
+  height: 120px;
+  min-width: 170px;
+}
+
+.empresa.analista {
+  height: 140px;
+  min-width: 190px;
+}
+
+.empresa.desenvolvedor-react {
+  height: 160px;
+  min-width: 210px;
+}
+
+.empresa.desenvolvedor {
+  height: 180px;
+  min-width: 230px;
+}
+
+.empresa:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
 .empresa-cargo {
   color: #61dafb;
   font-size: 1.5rem;
@@ -100,7 +130,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); 
+  background-color: rgba(0, 0, 0, 0.7); 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -108,14 +138,13 @@
 }
 
 .modal {
-  background-color: #000000;
+  background-color: #1e1e1e;
   padding: 2rem;
   border-radius: 10px;
   border: 2px solid #61dafb; 
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
   width: 90%; 
   max-width: 800px; 
-  max-height: 80vh; 
   position: relative;
   animation: fadeIn 0.3s ease;
   overflow-y: auto; 
@@ -135,13 +164,13 @@
 }
 
 .modal::-webkit-scrollbar-track {
-  background: #000; 
+  background: #1e1e1e; 
 }
 
 .modal::-webkit-scrollbar-thumb {
   background-color: #61dafb; 
   border-radius: 10px; 
-  border: 2px solid #000; 
+  border: 2px solid #1e1e1e; 
 }
 
 .modal .atribuicoes-list {
@@ -171,7 +200,7 @@
   display: flex;
   align-items: flex-start;
   margin-bottom: 10px;
-  color: white;
+  color: #f5f5f5;
 }
 
 .atribuicao-item::before {
@@ -179,9 +208,6 @@
   color: #61dafb; 
   margin-right: 10px;
 }
-
-
-
 
 @keyframes fadeIn {
   from {
@@ -204,7 +230,7 @@
     flex-direction: column;
     padding: 0;
     gap: 1rem;
-    overflow-x: hidden; 
+    overflow-x: hidden;
   }
 
   .empresa {
@@ -215,8 +241,7 @@
   }
 
   .modal {
-    width: 80%; 
-    max-width: none; 
+    width: 90%;
     max-height: 80vh;
     padding: 1rem;
   }
@@ -231,5 +256,35 @@
 
   .atribuicao-item {
     font-size: 1rem;
+  }
+
+  .empresa.estagiario {
+    height: 80px;
+    min-width: 280px;
+  }
+  
+  .empresa.trainee {
+    height: 80px;
+    min-width: 280px;
+  }
+  
+  .empresa.tecnico {
+    height: 80px;
+    min-width: 280px;
+  }
+  
+  .empresa.analista {
+    height: 80px;
+    min-width: 280px;
+  }
+  
+  .empresa.desenvolvedor-react {
+    height: 80px;
+    min-width: 280px;
+  }
+  
+  .empresa.desenvolvedor {
+    height: 80px;
+    min-width: 280px;
   }
 }
