@@ -11,7 +11,9 @@ import pvt from '../assets/projects/pvt.png';
 import fernandoCar from '../assets/projects/fernandoCar.png';
 import maracanaFc from '../assets/projects/maracana-fc.png';
 import informais from '../assets/projects/informais.png';
-import dashboard from '../assets/projects/dashboard.png'
+import dashboard from '../assets/projects/dashboard.png';
+import carbestore from '../assets/projects/carbestore.png'
+
 
 const projetos = [
     {
@@ -64,11 +66,25 @@ const projetos = [
         tipo: 'prod'
     },
     {
+        titulo: 'Carbe Store',
+        descricao: 'Site para vendas de produtos com Mercado Digital',
+        imagem: carbestore,
+        ordem: 'direita',
+        tipo: 'prod'
+    },
+    {
         titulo: 'FernandoCar',
         descricao: 'Sistema de ponto eletronico para funcionários',
         imagem: fernandoCar,
         ordem: 'direita',
         tipo: 'prod'
+    },
+    {
+        titulo: 'CifraDrum',
+        descricao: 'Aplicativo criado para orientar bateristas na hora de tocar',
+        imagem: cifraDrum,
+        ordem: 'direita',
+        tipo: 'local'
     },
     {
         titulo: 'ADSA Cond. Maracanã',
@@ -84,20 +100,13 @@ const projetos = [
         ordem: 'direita',
         tipo: 'local'
     },
-    {
-        titulo: 'Jogo de Mímica',
-        descricao: 'Jogos para brincar com toda a família em momentos de descontração',
-        imagem: mimicaImage,
-        ordem: 'esquerda',
-        tipo: 'local'
-    },
-    {
-        titulo: 'CifraDrum',
-        descricao: 'Aplicativo criado para orientar bateristas na hora de tocar',
-        imagem: cifraDrum,
-        ordem: 'direita',
-        tipo: 'local'
-    }
+    // {
+    //     titulo: 'Jogo de Mímica',
+    //     descricao: 'Jogos para brincar com toda a família em momentos de descontração',
+    //     imagem: mimicaImage,
+    //     ordem: 'esquerda',
+    //     tipo: 'local'
+    // },
 ];
 
 const MeusProjetos = () => {
