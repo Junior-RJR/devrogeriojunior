@@ -261,7 +261,7 @@
         bottom: auto;
     }
 
-    /* .modal {
+    .modal {
       width: 90%;
       padding: 1rem;
       max-height: 70vh;
@@ -282,5 +282,5 @@
     .closeButton {
       padding: 0.5rem 1rem;
       font-size: 0.9rem;
-    } */
+    }
 }

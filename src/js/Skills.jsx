@@ -126,7 +126,7 @@ const Skills = () => {
         className={styles.modal}
         overlayClassName={styles.modalOverlay}
       >
-        <h2>Experiências</h2>
+        {/* <h2>Habilidades</h2> */}
         <div className={styles.modalGridContainer}>
           {modalSkills.map((skill, index) => (
             <div key={index} className={styles.modalSkill}>
