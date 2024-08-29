@@ -112,6 +112,94 @@
     left: calc(50% - 14rem); 
     bottom: calc(50% - 10rem); 
   }
+
+  .viewAllButton {
+    margin-top: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    background-color: #58CCE9;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.viewAllButton:hover {
+    background-color: #45a8bf;
+}
+
+.modal {
+  width: 80%;
+  max-width: 600px;
+  background-color: rgb(0, 0, 0);
+  padding: 2rem;
+  position: relative;
+  margin: auto;
+  border-radius: 10px;
+  border: 2px solid #58CCE9; 
+  z-index: 1001;
+  max-height: 80vh; 
+  overflow-y: auto; 
+}
+
+.modal h2 {
+  color: #58CCE9;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.modalOverlay {
+  background-color: rgba(0, 0, 0, 0.75);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modalGridContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  max-height: 80vh; 
+  overflow-y: auto;
+}
+
+.modalSkill {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.modalSkillIcon {
+  width: 2rem;
+  height: 2rem;
+}
+
+.closeButton {
+  margin-top: 3rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  color: rgb(0, 0, 0);
+  background-color: #58CCE9;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.closeButton:hover {
+    background-color: #45a8bf;
+}
   
   @media (max-width: 768px) {
     .title {
@@ -172,4 +260,27 @@
         top: auto;
         bottom: auto;
     }
+
+    /* .modal {
+      width: 90%;
+      padding: 1rem;
+      max-height: 70vh;
+      overflow-y: auto;
+    }
+  
+    .modalGridContainer {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+      max-height: 50vh;
+    }
+  
+    .viewAllButton {
+      padding: 0.5rem 1rem;
+      font-size: 0.9rem;
+    }
+  
+    .closeButton {
+      padding: 0.5rem 1rem;
+      font-size: 0.9rem;
+    } */
 }
