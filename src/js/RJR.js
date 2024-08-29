@@ -40,11 +40,11 @@ const RJR = () => {
                 <div id="experiencia">
                     <Experiencias />
                 </div>
-                <div>
-                    <Cursos />
-                </div>
                 <div id="MeusProjetos">
                     <MeusProjetos/>
+                </div>
+                <div>
+                    <Cursos />
                 </div>
                 {/* <div id="projetos">
                     <Projetos/>

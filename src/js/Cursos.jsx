@@ -16,6 +16,9 @@ import diploma12 from '../assets/cursos/industria4.0.png';
 import diploma13 from '../assets/cursos/figma.png';
 import diploma14 from '../assets/cursos/next.js.png';
 import diploma15 from '../assets/cursos/issabel.png';
+import diploma16 from '../assets/cursos/seo.png';
+import diploma17 from '../assets/cursos/redux.png';
+import diploma18 from '../assets/cursos/cleancode.png';
 
 Modal.setAppElement('#root'); 
 
@@ -48,6 +51,18 @@ const Cursos = () => {
         <div className={styles.diplomaCard} onClick={() => openModal(diploma3)}>
           <img src={diploma3} alt="Diploma 3" className={styles.diplomaImageThumbnail} />
           <p className={styles.diplomaText}>Scrum Foundation</p>
+        </div>
+        <div className={styles.diplomaCard} onClick={() => openModal(diploma18)}>
+          <img src={diploma18} alt="Diploma 18" className={styles.diplomaImageThumbnail} />
+          <p className={styles.diplomaText}>Clean Code</p>
+        </div>
+        <div className={styles.diplomaCard} onClick={() => openModal(diploma16)}>
+          <img src={diploma16} alt="Diploma 16" className={styles.diplomaImageThumbnail} />
+          <p className={styles.diplomaText}>SEO for Devs</p>
+        </div>
+        <div className={styles.diplomaCard} onClick={() => openModal(diploma17)}>
+          <img src={diploma17} alt="Diploma 17" className={styles.diplomaImageThumbnail} />
+          <p className={styles.diplomaText}>Redux + Zustand</p>
         </div>
         <div className={styles.diplomaCard} onClick={() => openModal(diploma13)}>
           <img src={diploma13} alt="Diploma 13" className={styles.diplomaImageThumbnail} />
