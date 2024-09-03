@@ -124,10 +124,21 @@
         transition: transform 0.3s ease-in-out;
     }
 
+    /* .mobileMenu.open {
+        transform: translateY(0);
+        background: url('../assets/fundo12.jpg') no-repeat center top;
+    } */
+    
     .mobileMenu.open {
         transform: translateY(0);
+        /* background: url('../assets/fundo5.jpg') no-repeat center top; */
+        background: url('../assets/fundo11.jpg') no-repeat center top;
+        background-size: cover; 
+        background-attachment: fixed; 
+        background-position: center; 
+        /* background-size: contain;  */
     }
-
+    
     .navList {
         flex-direction: column;
         gap: 1.5rem;

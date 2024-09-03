@@ -19,6 +19,8 @@ import diploma15 from '../assets/cursos/issabel.png';
 import diploma16 from '../assets/cursos/seo.png';
 import diploma17 from '../assets/cursos/redux.png';
 import diploma18 from '../assets/cursos/cleancode.png';
+import diploma19 from '../assets/cursos/ux_ui.png';
+import diploma20 from '../assets/cursos/acessibilade reactJS.png';
 
 Modal.setAppElement('#root'); 
 
@@ -68,9 +70,17 @@ const Cursos = () => {
           <img src={diploma13} alt="Diploma 13" className={styles.diplomaImageThumbnail} />
           <p className={styles.diplomaText}>Figma for Devs</p>
         </div>
+        <div className={styles.diplomaCard} onClick={() => openModal(diploma19)}>
+          <img src={diploma19} alt="Diploma 19" className={styles.diplomaImageThumbnail} />
+          <p className={styles.diplomaText}>UX / UI com Figma</p>
+        </div>
         <div className={styles.diplomaCard} onClick={() => openModal(diploma4)}>
           <img src={diploma4} alt="Diploma 4" className={styles.diplomaImageThumbnail} />
           <p className={styles.diplomaText}>CyberSecurity Awareness</p>
+        </div>
+        <div className={styles.diplomaCard} onClick={() => openModal(diploma20)}>
+          <img src={diploma20} alt="Diploma 20" className={styles.diplomaImageThumbnail} />
+          <p className={styles.diplomaText}>Acessibilidade com ReactJS</p>
         </div>
         <div className={styles.diplomaCard} onClick={() => openModal(diploma5)}>
           <img src={diploma5} alt="Diploma 5" className={styles.diplomaImageThumbnail} />
@@ -100,18 +110,18 @@ const Cursos = () => {
           <img src={diploma9} alt="Diploma 9" className={styles.diplomaImageThumbnail} />
           <p className={styles.diplomaText}>Redes TCP/IP</p>
         </div>
-        <div className={styles.diplomaCard} onClick={() => openModal(diploma10)}>
+        {/* <div className={styles.diplomaCard} onClick={() => openModal(diploma10)}>
           <img src={diploma10} alt="Diploma 10" className={styles.diplomaImageThumbnail} />
           <p className={styles.diplomaText}>Redes de Computadores</p>
-        </div>
+        </div> */}
         <div className={styles.diplomaCard} onClick={() => openModal(diploma11)}>
           <img src={diploma11} alt="Diploma 11" className={styles.diplomaImageThumbnail} />
           <p className={styles.diplomaText}>Lógica de Programação</p>
         </div>
-        <div className={styles.diplomaCard} onClick={() => openModal(diploma12)}>
+        {/* <div className={styles.diplomaCard} onClick={() => openModal(diploma12)}>
           <img src={diploma12} alt="Diploma 12" className={styles.diplomaImageThumbnail} />
           <p className={styles.diplomaText}>Desvendando Indústria 4.0</p>
-        </div>
+        </div> */}
 
 
         {/* <div className={styles.diplomaCard} onClick={() => openModal(diploma12)}>
