@@ -1,4 +1,4 @@
-.container {
+.containerPP {
     padding: 2rem 5rem; 
     max-width: 1200px;
     margin: 0 auto;
@@ -9,14 +9,14 @@
     box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
 }
 
-.title {
+.titlePP {
     text-align: center;
     color: #58CCE9; 
     font-size: 3rem; 
     margin-bottom: 2rem;
 }
 
-.subtitle {
+.subtitlePP {
     font-size: 1.8rem; 
     margin-top: 2rem;
     color: #58CCE9; 
@@ -28,18 +28,18 @@ p {
     color: #e0e0e0; 
 }
 
-a {
+.emailLinkPP {
     color: #58CCE9; 
     text-decoration: underline;
     cursor: pointer;
 }
 
-.emailLink:hover {
+.emailLinkPP:hover {
     color: #45a8bf;
     text-decoration: none;
 }
 
-.list {
+.listPP {
     padding-left: 1.5rem; 
     list-style-type: disc; 
     line-height: 2rem; 
@@ -47,17 +47,17 @@ a {
 }
 
 @media (max-width: 768px) {
-    .container {
+    .containerPP {
         padding: 1.5rem 2rem;
         max-width: 100%; 
     }
 
-    .title {
+    .titlePP {
         font-size: 2.5rem; 
         margin-bottom: 1.5rem;
     }
 
-    .subtitle {
+    .subtitlePP {
         font-size: 1.5rem; 
         margin-top: 1.5rem;
     }
@@ -71,7 +71,7 @@ a {
         font-size: 1.1rem; 
     }
 
-    .list {
+    .listPP {
         padding-left: 1rem; 
         line-height: 1.8rem; 
     }
