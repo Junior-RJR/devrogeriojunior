@@ -1,0 +1,71 @@
+.cookiesBanner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9); 
+    color: #58CCE9; 
+    z-index: 999;
+    padding: 1rem 2rem; 
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+}
+
+.cookiesContent {
+    max-width: 1000px; 
+    margin-bottom: 1rem; 
+}
+
+.cookiesContent p {
+    font-size: 0.9rem; 
+    margin-bottom: 1rem; 
+    font-family: 'Poppins', sans-serif;
+    color: #58CCE9;
+    line-height: 1.5rem;
+}
+
+.link {
+    color: #58CCE9;
+    text-decoration: underline;
+}
+
+.acceptButton {
+    background-color: #58CCE9;
+    color: black;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.acceptButton:hover {
+    background-color: #45a8bf;
+}
+
+@media (max-width: 768px) {
+    .cookiesBanner {
+        padding: 2rem; 
+    }
+
+    .cookiesContent {
+        max-width: 100%; 
+        margin-bottom: 0.75rem;
+    }
+
+    .cookiesContent p {
+        font-size: 0.8rem; 
+        line-height: 1.3rem; 
+    }
+
+    .acceptButton {
+        padding: 0.6rem 1.2rem; 
+        font-size: 0.9rem; 
+    }
+}
+

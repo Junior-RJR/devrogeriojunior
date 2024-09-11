@@ -9,6 +9,7 @@ import Experiencias from './Experiencias';
 import Home from './Home';
 import Skills from './Skills';
 import Cursos from './Cursos';
+import Cookies from './Cookies';
 // import Projetos from './Projetos';
 // import SiteConstrucao from './SiteConstrucao';
 
@@ -25,6 +26,7 @@ const RJR = () => {
             <Header />
             <div>
                 <Home />
+                <Cookies />
             </div>
             <main>
 

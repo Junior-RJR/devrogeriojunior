@@ -1,7 +1,8 @@
 import React from 'react';
-import RJR from './js/RJR';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import RJR from './js/RJR';
 import Dashboard from './js/Dashboard';
+import PoliticaPrivacidade from './js/PoliticaPrivacidade';
 import './global.css'
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
         <Routes>
           <Route path="/" element={<RJR />} />
           <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/politica-de-privacidade" element={<PoliticaPrivacidade />} />
         </Routes>
       </Router>
     );
