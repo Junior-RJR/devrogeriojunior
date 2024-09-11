@@ -7,6 +7,8 @@
     color: #e0e0e0; 
     border-radius: 10px;
     box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+    margin-top: 3rem;
+    margin-bottom: 8rem;
 }
 
 .titlePP {
@@ -50,6 +52,8 @@ p {
     .containerPP {
         padding: 1.5rem 2rem;
         max-width: 100%; 
+        margin-top: 3rem;
+        margin-bottom: 6rem;
     }
 
     .titlePP {
