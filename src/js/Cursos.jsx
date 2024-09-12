@@ -21,6 +21,7 @@ import diploma17 from '../assets/cursos/redux.png';
 import diploma18 from '../assets/cursos/cleancode.png';
 import diploma19 from '../assets/cursos/ux_ui.png';
 import diploma20 from '../assets/cursos/acessibilade reactJS.png';
+import diploma21 from '../assets/cursos/dpostart.png';
 
 Modal.setAppElement('#root'); 
 
@@ -61,6 +62,10 @@ const Cursos = () => {
         <div className={styles.diplomaCard} onClick={() => openModal(diploma16)}>
           <img src={diploma16} alt="Diploma 16" className={styles.diplomaImageThumbnail} />
           <p className={styles.diplomaText}>SEO for Devs</p>
+        </div>
+        <div className={styles.diplomaCard} onClick={() => openModal(diploma21)}>
+          <img src={diploma21} alt="Diploma 21" className={styles.diplomaImageThumbnail} />
+          <p className={styles.diplomaText}>DPO Start</p>
         </div>
         <div className={styles.diplomaCard} onClick={() => openModal(diploma17)}>
           <img src={diploma17} alt="Diploma 17" className={styles.diplomaImageThumbnail} />
@@ -110,20 +115,20 @@ const Cursos = () => {
           <img src={diploma9} alt="Diploma 9" className={styles.diplomaImageThumbnail} />
           <p className={styles.diplomaText}>Redes TCP/IP</p>
         </div>
-        {/* <div className={styles.diplomaCard} onClick={() => openModal(diploma10)}>
+        <div className={styles.diplomaCard} onClick={() => openModal(diploma10)}>
           <img src={diploma10} alt="Diploma 10" className={styles.diplomaImageThumbnail} />
           <p className={styles.diplomaText}>Redes de Computadores</p>
-        </div> */}
+        </div>
         <div className={styles.diplomaCard} onClick={() => openModal(diploma11)}>
           <img src={diploma11} alt="Diploma 11" className={styles.diplomaImageThumbnail} />
           <p className={styles.diplomaText}>Lógica de Programação</p>
         </div>
-        {/* <div className={styles.diplomaCard} onClick={() => openModal(diploma12)}>
+        <div className={styles.diplomaCard} onClick={() => openModal(diploma12)}>
           <img src={diploma12} alt="Diploma 12" className={styles.diplomaImageThumbnail} />
           <p className={styles.diplomaText}>Desvendando Indústria 4.0</p>
-        </div> */}
+        </div>
 
-
+        {/* PEGAR ESSES DOIS CERTIFICADOS ABAIXO NO HD EXTERNO */}
         {/* <div className={styles.diplomaCard} onClick={() => openModal(diploma12)}>
           <img src={diploma12} alt="Diploma 12" className={styles.diplomaImageThumbnail} />
           <p className={styles.diplomaText}>Linux</p>
