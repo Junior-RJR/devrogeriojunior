@@ -22,6 +22,7 @@ import diploma18 from '../assets/cursos/cleancode.png';
 import diploma19 from '../assets/cursos/ux_ui.png';
 import diploma20 from '../assets/cursos/acessibilade reactJS.png';
 import diploma21 from '../assets/cursos/dpostart.png';
+import diploma22 from '../assets/cursos/reactNative.png';
 
 Modal.setAppElement('#root'); 
 
@@ -50,6 +51,10 @@ const Cursos = () => {
         <div className={styles.diplomaCard} onClick={() => openModal(diploma2)}>
           <img src={diploma2} alt="Diploma 2" className={styles.diplomaImageThumbnail} />
           <p className={styles.diplomaText}>Fundamentos de Python</p>
+        </div>
+        <div className={styles.diplomaCard} onClick={() => openModal(diploma22)}>
+          <img src={diploma22} alt="Diploma 22" className={styles.diplomaImageThumbnail} />
+          <p className={styles.diplomaText}>React Native</p>
         </div>
         <div className={styles.diplomaCard} onClick={() => openModal(diploma3)}>
           <img src={diploma3} alt="Diploma 3" className={styles.diplomaImageThumbnail} />
@@ -123,10 +128,12 @@ const Cursos = () => {
           <img src={diploma11} alt="Diploma 11" className={styles.diplomaImageThumbnail} />
           <p className={styles.diplomaText}>Lógica de Programação</p>
         </div>
-        <div className={styles.diplomaCard} onClick={() => openModal(diploma12)}>
+        
+        
+        {/* <div className={styles.diplomaCard} onClick={() => openModal(diploma12)}>
           <img src={diploma12} alt="Diploma 12" className={styles.diplomaImageThumbnail} />
           <p className={styles.diplomaText}>Desvendando Indústria 4.0</p>
-        </div>
+        </div> */}
 
         {/* PEGAR ESSES DOIS CERTIFICADOS ABAIXO NO HD EXTERNO */}
         {/* <div className={styles.diplomaCard} onClick={() => openModal(diploma12)}>
