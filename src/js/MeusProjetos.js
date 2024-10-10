@@ -13,6 +13,8 @@ import maracanaFc from '../assets/projects/maracana-fc.png';
 import informais from '../assets/projects/informais.png';
 import dashboard from '../assets/projects/dashboard.png';
 import carbestore from '../assets/projects/carbestore.png'
+import kjrvagas from '../assets/projects/kjrvagas.png'
+import kjrencomendas from '../assets/projects/kjrencomendas.png'
 
 
 const projetos = [
@@ -21,84 +23,112 @@ const projetos = [
         descricao: 'Site empresarial de desenvolvimento de software e aplicações',
         imagem: kjrdev,
         ordem: 'direita',
-        tipo: 'prod'
+        tipo: 'prod',
+        link: 'https://kjrdev.com.br'
     },
     {
         titulo: 'Edmar Aragão',
         descricao: 'Site para apresentação de candidato a Vereador',
         imagem: edmararagao,
         ordem: 'direita',
-        tipo: 'prod'
+        tipo: 'prod',
+        link: 'devrogeriojunior.com.br/site-vazio'
     },
     {
         titulo: 'I Love Pastel',
         descricao: 'Aplicação web de gerenciamento de comandas e estoque',
         imagem: maza,
         ordem: 'esquerda',
-        tipo: 'prod'
+        tipo: 'prod',
+        link: 'https://pastelaria-maza.vercel.app/'
     },
     {
         titulo: 'Site Pessoal',
         descricao: 'Site de apresentação pessoal',
         imagem: devRJR,
         ordem: 'direita',
-        tipo: 'prod'
+        tipo: 'prod',
+        link: 'https://devrogeriojunior.com.br'
     },
     {
         titulo: 'Infor-Mais',
         descricao: 'Site de empresa de tecnologia',
         imagem: informais,
         ordem: 'direita',
-        tipo: 'prod'
+        tipo: 'prod',
+        link: 'devrogeriojunior.com.br/site-vazio'
     },
     {
         titulo: 'PVT Consultoria',
         descricao: 'Site para informação de contato para consultoria',
         imagem: pvt,
         ordem: 'direita',
-        tipo: 'prod'
+        tipo: 'prod',
+        link: 'https://www.pvtconsultoria.com.br'
     },
     {
         titulo: 'Dashboard RJR',
         descricao: 'Dashboard para controle pessoal de trabalhos realizados',
         imagem: dashboard,
         ordem: 'direita',
-        tipo: 'prod'
+        tipo: 'prod',
+        link: 'https://devrogeriojunior.com.br/dashboard'
     },
     {
         titulo: 'Carbe Store',
         descricao: 'Site para vendas de produtos com Mercado Digital',
         imagem: carbestore,
         ordem: 'direita',
-        tipo: 'prod'
+        tipo: 'prod',
+        link: 'devrogeriojunior.com.br/site-vazio'
+    },
+    {
+        titulo: 'ADSA - Vagas',
+        descricao: 'Plataforma para divulgação de vagas dentro do Ministério de Santo André da Igreja Assembléia de Deus',
+        imagem: kjrvagas,
+        ordem: 'direita',
+        tipo: 'prod',
+        link: 'https://kjrdev.com.br/adsa-vagas'
     },
     {
         titulo: 'FernandoCar',
         descricao: 'Sistema de ponto eletronico para funcionários',
         imagem: fernandoCar,
         ordem: 'direita',
-        tipo: 'prod'
+        tipo: 'prod',
+        link: 'https://ponto-eletronico-front-mocha.vercel.app'
+    },
+    {
+        titulo: 'KJR Encomendas',
+        descricao: 'Sistema de Gestão de encomendas recebidas e entregues de condomínios de apartamentos',
+        imagem: kjrencomendas,
+        ordem: 'direita',
+        tipo: 'prod',
+        link: 'devrogeriojunior.com.br/site-vazio'
     },
     {
         titulo: 'CifraDrum',
         descricao: 'Aplicativo criado para orientar bateristas na hora de tocar',
         imagem: cifraDrum,
         ordem: 'direita',
-        tipo: 'local'
+        tipo: 'prod',
+        link: 'https://cifra-drum.vercel.app'
     },
     {
         titulo: 'ADSA Cond. Maracanã',
         descricao: 'Site de apresentação de igreja',
         imagem: adsa,
         ordem: 'esquerda',
-        tipo: 'local'
+        tipo: 'local',
+        link: 'devrogeriojunior.com.br/site-vazio'
     },
     {
         titulo: 'Maracanã FC',
         descricao: 'Site de Time de Futebol para divulgação e marcação de confrontos',
         imagem: maracanaFc,
         ordem: 'direita',
-        tipo: 'local'
+        tipo: 'local',
+        link: 'devrogeriojunior.com.br/site-vazio'
     },
     // {
     //     titulo: 'Jogo de Mímica',
@@ -106,6 +136,7 @@ const projetos = [
     //     imagem: mimicaImage,
     //     ordem: 'esquerda',
     //     tipo: 'local'
+    //     link: 'https://jogo-de-mimica.vercel.app'
     // },
 ];
 
@@ -145,6 +176,16 @@ const MeusProjetos = () => {
                         <span className={`botao-projeto ${projeto.tipo}`}>
                             {projeto.tipo === 'prod' ? 'Prod' : 'Local'}
                         </span>
+                        {projeto.tipo === 'prod' && (
+                            <a
+                                href={projeto.link}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="botao-ver"
+                            >
+                                VER
+                            </a>
+                        )}
                         <h3>{projeto.titulo}</h3>
                         <p>{projeto.descricao}</p>
                     </div>
@@ -156,6 +197,5 @@ const MeusProjetos = () => {
         </div>
     );
 }
-
 
 export default MeusProjetos;

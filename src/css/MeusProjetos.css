@@ -119,6 +119,24 @@
     background-color: #585757;
 }
 
+.botao-ver {
+  display: inline-block;
+  margin-left: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  background-color: #61dafbb6;
+  text-decoration: none;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.botao-ver:hover {
+  background-color: #61dafb;
+}
+
+
 @media (max-width: 768px) {
     .meus-projetos {
       padding: 2rem; 
@@ -167,5 +185,12 @@
       padding: 0.4rem 0.8rem; 
       max-width: 100%; 
       margin-bottom: 0.5rem;
+    }
+
+    .botao-ver {
+      display: inline-block;
+      margin-left: 1rem;
+      padding: 0.4rem 0.8rem; 
+      font-size: 1rem;
     }
   }
