@@ -32,7 +32,7 @@ const projetos = [
         imagem: edmararagao,
         ordem: 'direita',
         tipo: 'prod',
-        link: 'devrogeriojunior.com.br/site-vazio'
+        link: 'https://devrogeriojunior.com.br/site-indisponivel'
     },
     {
         titulo: 'I Love Pastel',
@@ -56,7 +56,7 @@ const projetos = [
         imagem: informais,
         ordem: 'direita',
         tipo: 'prod',
-        link: 'devrogeriojunior.com.br/site-vazio'
+        link: 'https://devrogeriojunior.com.br/site-indisponivel'
     },
     {
         titulo: 'PVT Consultoria',
@@ -80,7 +80,7 @@ const projetos = [
         imagem: carbestore,
         ordem: 'direita',
         tipo: 'prod',
-        link: 'devrogeriojunior.com.br/site-vazio'
+        link: 'https://devrogeriojunior.com.br/site-indisponivel'
     },
     {
         titulo: 'ADSA - Vagas',
@@ -104,7 +104,7 @@ const projetos = [
         imagem: kjrencomendas,
         ordem: 'direita',
         tipo: 'prod',
-        link: 'devrogeriojunior.com.br/site-vazio'
+        link: 'https://devrogeriojunior.com.br/site-indisponivel'
     },
     {
         titulo: 'CifraDrum',
@@ -120,7 +120,7 @@ const projetos = [
         imagem: adsa,
         ordem: 'esquerda',
         tipo: 'local',
-        link: 'devrogeriojunior.com.br/site-vazio'
+        link: 'https://devrogeriojunior.com.br/site-indisponivel'
     },
     {
         titulo: 'Maracanã FC',
@@ -128,7 +128,7 @@ const projetos = [
         imagem: maracanaFc,
         ordem: 'direita',
         tipo: 'local',
-        link: 'devrogeriojunior.com.br/site-vazio'
+        link: 'https://devrogeriojunior.com.br/site-indisponivel'
     },
     // {
     //     titulo: 'Jogo de Mímica',

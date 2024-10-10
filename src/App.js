@@ -15,7 +15,7 @@ function App() {
         <Routes>
           <Route path="/" element={<RJR />} />
           <Route path="/dashboard" element={<Dashboard />} />
-          <Route path="/site-vazio" element={<SiteVazio />} />
+          <Route path="/site-indisponivel" element={<SiteVazio />} />
           <Route path="/politica-de-privacidade" element={<PoliticaPrivacidade />} />
         </Routes>
       </Router>
