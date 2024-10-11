@@ -47,3 +47,44 @@
     height: 75%; 
     overflow: hidden;
   }
+
+  @media (max-width: 768px) {
+    .dashboard-container {
+      width: 95%;
+      margin: 0 auto;
+      margin-top: 10rem; 
+    }
+  
+    .dashboard-content {
+      margin-top: 1rem;
+    }
+  
+    .grid-container {
+      grid-template-columns: repeat(2, 1fr); 
+      grid-gap: 0.5rem;
+    }
+  
+    .grid-item {
+      height: auto;
+      padding: 1rem;
+    }
+  
+    .grid-content {
+      padding: 0.5rem;
+      text-align: center;
+    }
+  
+    .large-grid {
+      grid-template-columns: 100%;
+      margin-top: 1.5vh;
+    }
+  
+    .large-grid-item {
+      height: 45vh; 
+    }
+  
+    .small-grid-item {
+      height: 35vh;
+    }
+  }
+  

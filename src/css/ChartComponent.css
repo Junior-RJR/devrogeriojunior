@@ -12,3 +12,18 @@ canvas {
   width: 100% !important; 
   height: 100% !important;
 }
+
+@media (max-width: 768px) {
+  .chart-container {
+    margin-top: 1.5rem;
+    padding: 10px;
+    width: 100%;
+    height: auto; 
+    box-sizing: border-box;
+  }
+
+  canvas {
+    width: 100% !important;
+    height: 300px !important;
+  }
+}
