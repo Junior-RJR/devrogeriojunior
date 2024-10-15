@@ -12,7 +12,7 @@ import diploma8 from '../assets/cursos/po.png';
 import diploma9 from '../assets/cursos/redestcpip.png';
 import diploma10 from '../assets/cursos/redescomputadores.png';
 import diploma11 from '../assets/cursos/logicadeprogramacao.png';
-import diploma12 from '../assets/cursos/industria4.0.png';
+// import diploma12 from '../assets/cursos/industria4.0.png';
 import diploma13 from '../assets/cursos/figma.png';
 import diploma14 from '../assets/cursos/next.js.png';
 import diploma15 from '../assets/cursos/issabel.png';
@@ -23,6 +23,9 @@ import diploma19 from '../assets/cursos/ux_ui.png';
 import diploma20 from '../assets/cursos/acessibilade reactJS.png';
 import diploma21 from '../assets/cursos/dpostart.png';
 import diploma22 from '../assets/cursos/reactNative.png';
+import diploma23 from '../assets/cursos/linux.png';
+import diploma24 from '../assets/cursos/frontend.png';
+import diploma25 from '../assets/cursos/acessibilidadeweb.png';
 
 Modal.setAppElement('#root'); 
 
@@ -72,6 +75,10 @@ const Cursos = () => {
           <img src={diploma21} alt="Diploma 21" className={styles.diplomaImageThumbnail} />
           <p className={styles.diplomaText}>DPO Start</p>
         </div>
+        <div className={styles.diplomaCard} onClick={() => openModal(diploma23)}>
+          <img src={diploma23} alt="Diploma 23" className={styles.diplomaImageThumbnail} />
+          <p className={styles.diplomaText}>Linux Fundamentos</p>
+        </div>
         <div className={styles.diplomaCard} onClick={() => openModal(diploma17)}>
           <img src={diploma17} alt="Diploma 17" className={styles.diplomaImageThumbnail} />
           <p className={styles.diplomaText}>Redux + Zustand</p>
@@ -112,6 +119,14 @@ const Cursos = () => {
           <img src={diploma7} alt="Diploma 7" className={styles.diplomaImageThumbnail} />
           <p className={styles.diplomaText}>AWS</p>
         </div>
+        <div className={styles.diplomaCard} onClick={() => openModal(diploma24)}>
+          <img src={diploma24} alt="Diploma 24" className={styles.diplomaImageThumbnail} />
+          <p className={styles.diplomaText}>FrontEnd</p>
+        </div>
+        <div className={styles.diplomaCard} onClick={() => openModal(diploma25)}>
+          <img src={diploma25} alt="Diploma 25" className={styles.diplomaImageThumbnail} />
+          <p className={styles.diplomaText}>Acessibilidade Web</p>
+        </div>
         <div className={styles.diplomaCard} onClick={() => openModal(diploma8)}>
           <img src={diploma8} alt="Diploma 8" className={styles.diplomaImageThumbnail} />
           <p className={styles.diplomaText}>Product Owner</p>
@@ -136,12 +151,7 @@ const Cursos = () => {
         </div> */}
 
         {/* PEGAR ESSES DOIS CERTIFICADOS ABAIXO NO HD EXTERNO */}
-        {/* <div className={styles.diplomaCard} onClick={() => openModal(diploma12)}>
-          <img src={diploma12} alt="Diploma 12" className={styles.diplomaImageThumbnail} />
-          <p className={styles.diplomaText}>Linux</p>
-        </div>
-
-        <div className={styles.diplomaCard} onClick={() => openModal(diploma12)}>
+        {/*<div className={styles.diplomaCard} onClick={() => openModal(diploma12)}>
           <img src={diploma12} alt="Diploma 12" className={styles.diplomaImageThumbnail} />
           <p className={styles.diplomaText}>Cobit 5</p>
         </div> */}
