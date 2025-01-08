@@ -39,7 +39,7 @@ const Header = () => {
                 <ul className={styles.navList}>
                     <li className={styles.navItem}><Link to="homeId" className={styles.mobileNavLink} smooth={true} duration={500} onClick={toggleMenu}>Sobre Mim</Link></li>
                     <li className={styles.navItem}><Link to="skillsId" className={styles.mobileNavLink} smooth={true} duration={500} onClick={toggleMenu}>Habilidades</Link></li>
-                    <li className={styles.navItem}><Link to="experienciasId" className={styles.mobileNavLink} smooth={true} duration={500} onClick={toggleMenu}>Experiências</Link></li>
+                    {/* <li className={styles.navItem}><Link to="experienciasId" className={styles.mobileNavLink} smooth={true} duration={500} onClick={toggleMenu}>Experiências</Link></li> */}
                     <li className={styles.navItem}><Link to="meusProjetosId" className={styles.mobileNavLink} smooth={true} duration={500} onClick={toggleMenu}>Projetos</Link></li>
                     <li className={styles.navItem}><Link to="cursosId" className={styles.mobileNavLink} smooth={true} duration={500} onClick={toggleMenu}>Cursos</Link></li>
                     {/* <li className={styles.navItem}><Link to="/dashboard" className={styles.navLink}>Dashboard</Link></li> */}

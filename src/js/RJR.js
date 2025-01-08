@@ -5,7 +5,7 @@ import Footer from './Footer';
 import MeusProjetos from './MeusProjetos';
 import Header from './Header';
 // import SobreMim from './SobreMim';
-import Experiencias from './Experiencias';
+// import Experiencias from './Experiencias';
 import Home from './Home';
 import Skills from './Skills';
 import Cursos from './Cursos';
@@ -39,9 +39,9 @@ const RJR = () => {
                 <div>
                     <Skills />
                 </div>
-                <div id="experiencia">
+                {/* <div id="experiencia">
                     <Experiencias />
-                </div>
+                </div> */}
                 <div id="MeusProjetos">
                     <MeusProjetos/>
                 </div>
