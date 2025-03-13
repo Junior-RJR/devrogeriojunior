@@ -15,6 +15,7 @@ import dashboard from '../assets/projects/dashboard.png';
 import carbestore from '../assets/projects/carbestore.png'
 import kjrvagas from '../assets/projects/kjrvagas.png'
 import kjrencomendas from '../assets/projects/kjrencomendas.png'
+import ecommerce from '../assets/projects/ecommerce.png'
 
 
 const projetos = [
@@ -27,12 +28,12 @@ const projetos = [
         link: 'https://kjrdev.com.br'
     },
     {
-        titulo: 'Edmar Aragão',
-        descricao: 'Site para apresentação de candidato a Vereador',
-        imagem: edmararagao,
+        titulo: 'Site Pessoal',
+        descricao: 'Site de apresentação pessoal',
+        imagem: devRJR,
         ordem: 'direita',
         tipo: 'prod',
-        link: 'https://devrogeriojunior.com.br/site-indisponivel'
+        link: 'https://devrogeriojunior.com.br'
     },
     {
         titulo: 'I Love Pastel',
@@ -43,12 +44,20 @@ const projetos = [
         link: 'https://pastelaria-maza.vercel.app/'
     },
     {
-        titulo: 'Site Pessoal',
-        descricao: 'Site de apresentação pessoal',
-        imagem: devRJR,
+        titulo: 'Edmar Aragão',
+        descricao: 'Site para apresentação de candidato a Vereador',
+        imagem: edmararagao,
         ordem: 'direita',
         tipo: 'prod',
-        link: 'https://devrogeriojunior.com.br'
+        link: 'https://devrogeriojunior.com.br/site-indisponivel'
+    },
+    {
+        titulo: 'E-commerce',
+        descricao: 'Site de E-commerce geral',
+        imagem: ecommerce,
+        ordem: 'direita',
+        tipo: 'prod',
+        link: 'https://devrogeriojunior.com.br/site-indisponivel'
     },
     {
         titulo: 'Infor-Mais',
@@ -130,14 +139,14 @@ const projetos = [
         tipo: 'local',
         link: 'https://devrogeriojunior.com.br/site-indisponivel'
     },
-    // {
-    //     titulo: 'Jogo de Mímica',
-    //     descricao: 'Jogos para brincar com toda a família em momentos de descontração',
-    //     imagem: mimicaImage,
-    //     ordem: 'esquerda',
-    //     tipo: 'local'
-    //     link: 'https://jogo-de-mimica.vercel.app'
-    // },
+    {
+        titulo: 'Jogo de Mímica',
+        descricao: 'Jogos para brincar com toda a família em momentos de descontração',
+        imagem: mimicaImage,
+        ordem: 'esquerda',
+        tipo: 'local',
+        link: 'https://jogo-de-mimica.vercel.app'
+    },
 ];
 
 const MeusProjetos = () => {

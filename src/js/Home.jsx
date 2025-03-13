@@ -23,6 +23,7 @@ const Home = () => {
           <li>Habilidades em Front-end e Back-end</li>
           <li>Especialista em React, Python e outras tecnologias</li>
           <li>Projetos realizados com sucesso para diversos clientes</li>
+          <li>Conhecimento em Metodologias Ágeis</li>
         </ul>
          <button className={styles.requestButton} onClick={scrollToFooter}>Entre em contato</button>
       </div>

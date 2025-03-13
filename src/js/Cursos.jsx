@@ -27,6 +27,7 @@ import diploma23 from '../assets/cursos/linux.png';
 import diploma24 from '../assets/cursos/frontend.png';
 import diploma25 from '../assets/cursos/acessibilidadeweb.png';
 import diploma26 from '../assets/cursos/python.png';
+import diploma27 from '../assets/cursos/fullstackweek.jpeg';
 
 Modal.setAppElement('#root'); 
 
@@ -84,9 +85,9 @@ const Cursos = () => {
           <img src={diploma2} alt="Diploma 2" className={styles.diplomaImageThumbnail} />
           <p className={styles.diplomaText}>Fundamentos de Python</p>
         </div>
-        <div className={styles.diplomaCard} onClick={() => openModal(diploma17)}>
-          <img src={diploma17} alt="Diploma 17" className={styles.diplomaImageThumbnail} />
-          <p className={styles.diplomaText}>Redux + Zustand</p>
+        <div className={styles.diplomaCard} onClick={() => openModal(diploma4)}>
+          <img src={diploma4} alt="Diploma 4" className={styles.diplomaImageThumbnail} />
+          <p className={styles.diplomaText}>CyberSecurity Awareness</p>
         </div>
         <div className={styles.diplomaCard} onClick={() => openModal(diploma13)}>
           <img src={diploma13} alt="Diploma 13" className={styles.diplomaImageThumbnail} />
@@ -96,13 +97,17 @@ const Cursos = () => {
           <img src={diploma19} alt="Diploma 19" className={styles.diplomaImageThumbnail} />
           <p className={styles.diplomaText}>UX / UI com Figma</p>
         </div>
-        <div className={styles.diplomaCard} onClick={() => openModal(diploma4)}>
-          <img src={diploma4} alt="Diploma 4" className={styles.diplomaImageThumbnail} />
-          <p className={styles.diplomaText}>CyberSecurity Awareness</p>
+        <div className={styles.diplomaCard} onClick={() => openModal(diploma17)}>
+          <img src={diploma17} alt="Diploma 17" className={styles.diplomaImageThumbnail} />
+          <p className={styles.diplomaText}>Redux + Zustand</p>
         </div>
         <div className={styles.diplomaCard} onClick={() => openModal(diploma20)}>
           <img src={diploma20} alt="Diploma 20" className={styles.diplomaImageThumbnail} />
           <p className={styles.diplomaText}>Acessibilidade com ReactJS</p>
+        </div>
+        <div className={styles.diplomaCard} onClick={() => openModal(diploma27)}>
+          <img src={diploma27} alt="Diploma 27" className={styles.diplomaImageThumbnail} />
+          <p className={styles.diplomaText}>FullStack Week</p>
         </div>
         <div className={styles.diplomaCard} onClick={() => openModal(diploma5)}>
           <img src={diploma5} alt="Diploma 5" className={styles.diplomaImageThumbnail} />
@@ -136,16 +141,16 @@ const Cursos = () => {
           <img src={diploma8} alt="Diploma 8" className={styles.diplomaImageThumbnail} />
           <p className={styles.diplomaText}>Product Owner</p>
         </div>
-        <div className={styles.diplomaCard} onClick={() => openModal(diploma9)}>
-          <img src={diploma9} alt="Diploma 9" className={styles.diplomaImageThumbnail} />
-          <p className={styles.diplomaText}>Redes TCP/IP</p>
-        </div>
         <div className={styles.diplomaCard} onClick={() => openModal(diploma11)}>
           <img src={diploma11} alt="Diploma 11" className={styles.diplomaImageThumbnail} />
           <p className={styles.diplomaText}>Lógica de Programação</p>
         </div>
         
         
+        {/* <div className={styles.diplomaCard} onClick={() => openModal(diploma9)}>
+          <img src={diploma9} alt="Diploma 9" className={styles.diplomaImageThumbnail} />
+          <p className={styles.diplomaText}>Redes TCP/IP</p>
+        </div> */}
         {/* <div className={styles.diplomaCard} onClick={() => openModal(diploma10)}>
           <img src={diploma10} alt="Diploma 10" className={styles.diplomaImageThumbnail} />
           <p className={styles.diplomaText}>Redes de Computadores</p>
