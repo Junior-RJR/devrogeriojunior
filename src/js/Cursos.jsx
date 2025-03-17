@@ -10,9 +10,9 @@ import diploma6 from '../assets/cursos/powerbi.png';
 import diploma7 from '../assets/cursos/aws.jpg';
 import diploma8 from '../assets/cursos/po.png';
 import diploma9 from '../assets/cursos/redestcpip.png';
-// import diploma10 from '../assets/cursos/redescomputadores.png';
+import diploma10 from '../assets/cursos/redescomputadores.png';
 import diploma11 from '../assets/cursos/logicadeprogramacao.png';
-// import diploma12 from '../assets/cursos/industria4.0.png';
+import diploma12 from '../assets/cursos/industria4.0.png';
 import diploma13 from '../assets/cursos/figma.png';
 import diploma14 from '../assets/cursos/next.js.png';
 import diploma15 from '../assets/cursos/issabel.png';
@@ -28,6 +28,8 @@ import diploma24 from '../assets/cursos/frontend.png';
 import diploma25 from '../assets/cursos/acessibilidadeweb.png';
 import diploma26 from '../assets/cursos/python.png';
 import diploma27 from '../assets/cursos/fullstackweek.jpeg';
+import diploma28 from '../assets/cursos/metodologiasageis.png';
+import diploma29 from '../assets/cursos/liderancatecnica.png';
 
 Modal.setAppElement('#root'); 
 
@@ -64,6 +66,14 @@ const Cursos = () => {
         <div className={styles.diplomaCard} onClick={() => openModal(diploma3)}>
           <img src={diploma3} alt="Diploma 3" className={styles.diplomaImageThumbnail} />
           <p className={styles.diplomaText}>Scrum Foundation</p>
+        </div>
+        <div className={styles.diplomaCard} onClick={() => openModal(diploma28)}>
+          <img src={diploma28} alt="Diploma 28" className={styles.diplomaImageThumbnail} />
+          <p className={styles.diplomaText}>Metodologias Ágeis</p>
+        </div>
+        <div className={styles.diplomaCard} onClick={() => openModal(diploma29)}>
+          <img src={diploma29} alt="Diploma 29" className={styles.diplomaImageThumbnail} />
+          <p className={styles.diplomaText}>Liderença Técnica</p>
         </div>
         <div className={styles.diplomaCard} onClick={() => openModal(diploma18)}>
           <img src={diploma18} alt="Diploma 18" className={styles.diplomaImageThumbnail} />
@@ -145,20 +155,18 @@ const Cursos = () => {
           <img src={diploma11} alt="Diploma 11" className={styles.diplomaImageThumbnail} />
           <p className={styles.diplomaText}>Lógica de Programação</p>
         </div>
-        
-        
-        {/* <div className={styles.diplomaCard} onClick={() => openModal(diploma9)}>
+        <div className={styles.diplomaCard} onClick={() => openModal(diploma9)}>
           <img src={diploma9} alt="Diploma 9" className={styles.diplomaImageThumbnail} />
           <p className={styles.diplomaText}>Redes TCP/IP</p>
-        </div> */}
-        {/* <div className={styles.diplomaCard} onClick={() => openModal(diploma10)}>
+        </div>
+        <div className={styles.diplomaCard} onClick={() => openModal(diploma10)}>
           <img src={diploma10} alt="Diploma 10" className={styles.diplomaImageThumbnail} />
           <p className={styles.diplomaText}>Redes de Computadores</p>
-        </div> */}
-        {/* <div className={styles.diplomaCard} onClick={() => openModal(diploma12)}>
+        </div>
+         <div className={styles.diplomaCard} onClick={() => openModal(diploma12)}>
           <img src={diploma12} alt="Diploma 12" className={styles.diplomaImageThumbnail} />
           <p className={styles.diplomaText}>Desvendando Indústria 4.0</p>
-        </div> */}
+        </div>
 
         {/* PEGAR ESSES DOIS CERTIFICADOS ABAIXO NO HD EXTERNO */}
         {/*<div className={styles.diplomaCard} onClick={() => openModal(diploma12)}>
