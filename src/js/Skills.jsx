@@ -25,21 +25,23 @@ import scrum from '../assets/skills/scrum.svg';
 import docker from '../assets/skills/docker.svg';
 import mysql from '../assets/skills/mysql.svg';
 import php from '../assets/skills/php.svg';
+import csharp from '../assets/skills/csharp.svg';
 
 const Skills = () => {
   const displayedSkills = [
-    { name: 'AWS', image: aws},
-    { name: 'CSS', image: css},
-    { name: 'Django', image: django},
-    { name: 'HTML5', image: html5},
     { name: 'React', image: react},
-    { name: 'JavaScript', image: js},
+    { name: 'CSS', image: css},
     { name: 'Python', image: python},
+    { name: 'HTML5', image: html5},
+    { name: 'C#', image: csharp},
     { name: 'TypeScript', image: typescript},
+    { name: 'Django', image: django},
+    { name: 'JavaScript', image: js},
   ];
 
   const modalSkills = [
     { name: 'AWS', image: aws},
+    { name: 'C#', image: csharp},
     { name: 'CSS', image: css},
     { name: 'Django', image: django},
     { name: 'HTML5', image: html5},

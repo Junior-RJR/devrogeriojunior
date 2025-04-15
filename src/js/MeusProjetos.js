@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import '../css/MeusProjetos.css';
-import mimicaImage from '../assets/projects/mimica.png';
+// import mimicaImage from '../assets/projects/mimica.png';
 import kjrdev from '../assets/projects/kjrdev.png';
 import edmararagao from '../assets/projects/edmararagao.png';
 import maza from '../assets/projects/maza.png';
@@ -16,6 +16,7 @@ import carbestore from '../assets/projects/carbestore.png'
 import kjrvagas from '../assets/projects/kjrvagas.png'
 import kjrencomendas from '../assets/projects/kjrencomendas.png'
 import ecommerce from '../assets/projects/ecommerce.png'
+import ligamasterfifa from '../assets/projects/ligamasterfifa.png'
 
 
 const projetos = [
@@ -67,13 +68,14 @@ const projetos = [
         tipo: 'prod',
         link: 'https://devrogeriojunior.com.br/site-indisponivel'
     },
+    
     {
-        titulo: 'PVT Consultoria',
-        descricao: 'Site para informação de contato para consultoria',
-        imagem: pvt,
+        titulo: 'Liga Master Fifa',
+        descricao: 'Site para organizar diversos campeonatos de Video Game',
+        imagem: ligamasterfifa,
         ordem: 'direita',
         tipo: 'prod',
-        link: 'https://www.pvtconsultoria.com.br'
+        link: 'https://fifamasterleague.vercel.app'
     },
     {
         titulo: 'Dashboard RJR',
@@ -82,6 +84,14 @@ const projetos = [
         ordem: 'direita',
         tipo: 'prod',
         link: 'https://devrogeriojunior.com.br/dashboard'
+    },
+    {
+        titulo: 'PVT Consultoria',
+        descricao: 'Site para informação de contato para consultoria',
+        imagem: pvt,
+        ordem: 'direita',
+        tipo: 'prod',
+        link: 'https://www.pvtconsultoria.com.br'
     },
     {
         titulo: 'Carbe Store',
@@ -139,14 +149,14 @@ const projetos = [
         tipo: 'local',
         link: 'https://devrogeriojunior.com.br/site-indisponivel'
     },
-    {
-        titulo: 'Jogo de Mímica',
-        descricao: 'Jogos para brincar com toda a família em momentos de descontração',
-        imagem: mimicaImage,
-        ordem: 'esquerda',
-        tipo: 'local',
-        link: 'https://jogo-de-mimica.vercel.app'
-    },
+    // {
+    //     titulo: 'Jogo de Mímica',
+    //     descricao: 'Jogos para brincar com toda a família em momentos de descontração',
+    //     imagem: mimicaImage,
+    //     ordem: 'esquerda',
+    //     tipo: 'local',
+    //     link: 'https://jogo-de-mimica.vercel.app'
+    // },
 ];
 
 const MeusProjetos = () => {
