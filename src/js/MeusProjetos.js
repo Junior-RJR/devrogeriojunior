@@ -17,6 +17,7 @@ import kjrvagas from '../assets/projects/kjrvagas.png'
 import kjrencomendas from '../assets/projects/kjrencomendas.png'
 import ecommerce from '../assets/projects/ecommerce.png'
 import ligamasterfifa from '../assets/projects/ligamasterfifa.png'
+import pakistore from '../assets/projects/pakistore.png'
 
 
 const projetos = [
@@ -27,6 +28,14 @@ const projetos = [
         ordem: 'direita',
         tipo: 'prod',
         link: 'https://kjrdev.com.br'
+    },
+    {
+        titulo: 'Paki Store',
+        descricao: 'E-commerce desenvolvido pela plataforma NuvemShop',
+        imagem: pakistore,
+        ordem: 'direita',
+        tipo: 'prod',
+        link: 'https://pakistore.com.br'
     },
     {
         titulo: 'Site Pessoal',
